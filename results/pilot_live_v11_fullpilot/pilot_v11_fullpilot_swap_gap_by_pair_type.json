@@ -1,0 +1,397 @@
+[
+  {
+    "model": "Qwen-0.5B-Instruct",
+    "condition": "baseline",
+    "bucket_mode": "pair_type",
+    "buckets": [
+      {
+        "bucket": "outwardly_harsh_benevolent_vs_malicious",
+        "n_items": 1,
+        "n_swapped_false": 1,
+        "n_swapped_true": 0,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": null,
+        "task_b_swap_accuracy_gap": null,
+        "task_b_answer_distribution_swapped_false": {
+          "B": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {}
+      },
+      {
+        "bucket": "same_act_different_motive",
+        "n_items": 12,
+        "n_swapped_false": 6,
+        "n_swapped_true": 6,
+        "task_b_accuracy_swapped_false": 0.8333,
+        "task_b_accuracy_swapped_true": 0.6667,
+        "task_b_swap_accuracy_gap": 0.1666,
+        "task_b_answer_distribution_swapped_false": {
+          "B": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "A": 0.5,
+          "B": 0.5
+        }
+      },
+      {
+        "bucket": "same_intention_moral_vs_immoral_action",
+        "n_items": 5,
+        "n_swapped_false": 1,
+        "n_swapped_true": 4,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": 1.0,
+        "task_b_swap_accuracy_gap": 0.0,
+        "task_b_answer_distribution_swapped_false": {
+          "Same": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "Same": 1.0
+        }
+      },
+      {
+        "bucket": "same_norm_different_heart",
+        "n_items": 2,
+        "n_swapped_false": 1,
+        "n_swapped_true": 1,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": 1.0,
+        "task_b_swap_accuracy_gap": 0.0,
+        "task_b_answer_distribution_swapped_false": {
+          "B": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "B": 1.0
+        }
+      }
+    ]
+  },
+  {
+    "model": "Qwen-0.5B-Instruct",
+    "condition": "christian_heart",
+    "bucket_mode": "pair_type",
+    "buckets": [
+      {
+        "bucket": "outwardly_harsh_benevolent_vs_malicious",
+        "n_items": 1,
+        "n_swapped_false": 1,
+        "n_swapped_true": 0,
+        "task_b_accuracy_swapped_false": 0.0,
+        "task_b_accuracy_swapped_true": null,
+        "task_b_swap_accuracy_gap": null,
+        "task_b_answer_distribution_swapped_false": {
+          "A": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {}
+      },
+      {
+        "bucket": "same_act_different_motive",
+        "n_items": 12,
+        "n_swapped_false": 5,
+        "n_swapped_true": 7,
+        "task_b_accuracy_swapped_false": 0.2,
+        "task_b_accuracy_swapped_true": 0.5714,
+        "task_b_swap_accuracy_gap": 0.3714,
+        "task_b_answer_distribution_swapped_false": {
+          "A": 0.8,
+          "B": 0.2
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "A": 0.8571,
+          "B": 0.1429
+        }
+      },
+      {
+        "bucket": "same_intention_moral_vs_immoral_action",
+        "n_items": 5,
+        "n_swapped_false": 1,
+        "n_swapped_true": 4,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": 1.0,
+        "task_b_swap_accuracy_gap": 0.0,
+        "task_b_answer_distribution_swapped_false": {
+          "Same": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "Same": 1.0
+        }
+      },
+      {
+        "bucket": "same_norm_different_heart",
+        "n_items": 2,
+        "n_swapped_false": 0,
+        "n_swapped_true": 2,
+        "task_b_accuracy_swapped_false": null,
+        "task_b_accuracy_swapped_true": 0.5,
+        "task_b_swap_accuracy_gap": null,
+        "task_b_answer_distribution_swapped_false": {},
+        "task_b_answer_distribution_swapped_true": {
+          "A": 1.0
+        }
+      }
+    ]
+  },
+  {
+    "model": "Qwen-0.5B-Instruct",
+    "condition": "secular_matched",
+    "bucket_mode": "pair_type",
+    "buckets": [
+      {
+        "bucket": "outwardly_harsh_benevolent_vs_malicious",
+        "n_items": 1,
+        "n_swapped_false": 1,
+        "n_swapped_true": 0,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": null,
+        "task_b_swap_accuracy_gap": null,
+        "task_b_answer_distribution_swapped_false": {
+          "B": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {}
+      },
+      {
+        "bucket": "same_act_different_motive",
+        "n_items": 12,
+        "n_swapped_false": 4,
+        "n_swapped_true": 8,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": 0.875,
+        "task_b_swap_accuracy_gap": 0.125,
+        "task_b_answer_distribution_swapped_false": {
+          "A": 0.25,
+          "B": 0.75
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "A": 1.0
+        }
+      },
+      {
+        "bucket": "same_intention_moral_vs_immoral_action",
+        "n_items": 5,
+        "n_swapped_false": 3,
+        "n_swapped_true": 2,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": 1.0,
+        "task_b_swap_accuracy_gap": 0.0,
+        "task_b_answer_distribution_swapped_false": {
+          "Same": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "Same": 1.0
+        }
+      },
+      {
+        "bucket": "same_norm_different_heart",
+        "n_items": 2,
+        "n_swapped_false": 1,
+        "n_swapped_true": 1,
+        "task_b_accuracy_swapped_false": 0.0,
+        "task_b_accuracy_swapped_true": 1.0,
+        "task_b_swap_accuracy_gap": 1.0,
+        "task_b_answer_distribution_swapped_false": {
+          "A": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "B": 1.0
+        }
+      }
+    ]
+  },
+  {
+    "model": "Qwen-1.5B-Instruct",
+    "condition": "baseline",
+    "bucket_mode": "pair_type",
+    "buckets": [
+      {
+        "bucket": "outwardly_harsh_benevolent_vs_malicious",
+        "n_items": 1,
+        "n_swapped_false": 1,
+        "n_swapped_true": 0,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": null,
+        "task_b_swap_accuracy_gap": null,
+        "task_b_answer_distribution_swapped_false": {
+          "B": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {}
+      },
+      {
+        "bucket": "same_act_different_motive",
+        "n_items": 12,
+        "n_swapped_false": 6,
+        "n_swapped_true": 6,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": 0.5,
+        "task_b_swap_accuracy_gap": 0.5,
+        "task_b_answer_distribution_swapped_false": {
+          "A": 0.1667,
+          "B": 0.8333
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "A": 0.3333,
+          "B": 0.6667
+        }
+      },
+      {
+        "bucket": "same_intention_moral_vs_immoral_action",
+        "n_items": 5,
+        "n_swapped_false": 1,
+        "n_swapped_true": 4,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": 1.0,
+        "task_b_swap_accuracy_gap": 0.0,
+        "task_b_answer_distribution_swapped_false": {
+          "Same": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "Same": 1.0
+        }
+      },
+      {
+        "bucket": "same_norm_different_heart",
+        "n_items": 2,
+        "n_swapped_false": 1,
+        "n_swapped_true": 1,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": 1.0,
+        "task_b_swap_accuracy_gap": 0.0,
+        "task_b_answer_distribution_swapped_false": {
+          "B": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "B": 1.0
+        }
+      }
+    ]
+  },
+  {
+    "model": "Qwen-1.5B-Instruct",
+    "condition": "christian_heart",
+    "bucket_mode": "pair_type",
+    "buckets": [
+      {
+        "bucket": "outwardly_harsh_benevolent_vs_malicious",
+        "n_items": 1,
+        "n_swapped_false": 1,
+        "n_swapped_true": 0,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": null,
+        "task_b_swap_accuracy_gap": null,
+        "task_b_answer_distribution_swapped_false": {
+          "B": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {}
+      },
+      {
+        "bucket": "same_act_different_motive",
+        "n_items": 12,
+        "n_swapped_false": 5,
+        "n_swapped_true": 7,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": 0.7143,
+        "task_b_swap_accuracy_gap": 0.2857,
+        "task_b_answer_distribution_swapped_false": {
+          "B": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "A": 0.4286,
+          "B": 0.5714
+        }
+      },
+      {
+        "bucket": "same_intention_moral_vs_immoral_action",
+        "n_items": 5,
+        "n_swapped_false": 1,
+        "n_swapped_true": 4,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": 1.0,
+        "task_b_swap_accuracy_gap": 0.0,
+        "task_b_answer_distribution_swapped_false": {
+          "Same": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "Same": 1.0
+        }
+      },
+      {
+        "bucket": "same_norm_different_heart",
+        "n_items": 2,
+        "n_swapped_false": 0,
+        "n_swapped_true": 2,
+        "task_b_accuracy_swapped_false": null,
+        "task_b_accuracy_swapped_true": 1.0,
+        "task_b_swap_accuracy_gap": null,
+        "task_b_answer_distribution_swapped_false": {},
+        "task_b_answer_distribution_swapped_true": {
+          "A": 0.5,
+          "B": 0.5
+        }
+      }
+    ]
+  },
+  {
+    "model": "Qwen-1.5B-Instruct",
+    "condition": "secular_matched",
+    "bucket_mode": "pair_type",
+    "buckets": [
+      {
+        "bucket": "outwardly_harsh_benevolent_vs_malicious",
+        "n_items": 1,
+        "n_swapped_false": 1,
+        "n_swapped_true": 0,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": null,
+        "task_b_swap_accuracy_gap": null,
+        "task_b_answer_distribution_swapped_false": {
+          "B": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {}
+      },
+      {
+        "bucket": "same_act_different_motive",
+        "n_items": 12,
+        "n_swapped_false": 4,
+        "n_swapped_true": 8,
+        "task_b_accuracy_swapped_false": 0.75,
+        "task_b_accuracy_swapped_true": 0.5,
+        "task_b_swap_accuracy_gap": 0.25,
+        "task_b_answer_distribution_swapped_false": {
+          "B": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "A": 0.375,
+          "B": 0.625
+        }
+      },
+      {
+        "bucket": "same_intention_moral_vs_immoral_action",
+        "n_items": 5,
+        "n_swapped_false": 3,
+        "n_swapped_true": 2,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": 1.0,
+        "task_b_swap_accuracy_gap": 0.0,
+        "task_b_answer_distribution_swapped_false": {
+          "Same": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "Same": 1.0
+        }
+      },
+      {
+        "bucket": "same_norm_different_heart",
+        "n_items": 2,
+        "n_swapped_false": 1,
+        "n_swapped_true": 1,
+        "task_b_accuracy_swapped_false": 1.0,
+        "task_b_accuracy_swapped_true": 1.0,
+        "task_b_swap_accuracy_gap": 0.0,
+        "task_b_answer_distribution_swapped_false": {
+          "B": 1.0
+        },
+        "task_b_answer_distribution_swapped_true": {
+          "B": 1.0
+        }
+      }
+    ]
+  }
+]

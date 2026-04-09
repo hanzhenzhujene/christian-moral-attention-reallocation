@@ -1,0 +1,28 @@
+You will compare two short moral cases.
+
+Read only what is written. Do not assume hidden facts.
+Answer Task A and Task C only.
+
+Task A:
+- Which case is more morally problematic overall?
+
+Task C:
+- What chiefly explains your Task A answer?
+- Choose only one label: outward_act, motive, consequence, or rule.
+- Task C explains Task A, not Task B.
+
+Full Case A:
+{{case_a}}
+
+Full Case B:
+{{case_b}}
+
+Return exactly this JSON shape:
+{
+  "task_a_more_morally_problematic": "<one of: A, B, Same>",
+  "task_c_primary_reason": "<one of: outward_act, motive, consequence, rule>",
+  "brief_explanation": "<one short sentence, <= 24 words>"
+}
+
+Output one JSON object only.
+The first character of your reply must be "{" and the last character must be "}".

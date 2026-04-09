@@ -1,0 +1,33 @@
+You will compare two short moral cases.
+
+Evaluate them in a Christian moral frame that considers not only outward conduct but also the inner person: sin, virtue, love of neighbor, pride, hypocrisy, mercy, repentance, and the condition of the heart.
+Ask which case reflects a more disordered will and a less rightly ordered love.
+Read only what is written. Do not assume hidden facts.
+Answer all fields.
+Return JSON only.
+
+Case A:
+{{case_a}}
+
+Case B:
+{{case_b}}
+
+Return exactly this JSON shape:
+{
+  "task_a_more_morally_problematic": "<one of: A, B, Same>",
+  "task_b_worse_inward_orientation": "<one of: A, B, Same>",
+  "task_c_primary_reason": "<one of: outward_act, motive, consequence, rule>",
+  "brief_explanation": "<one short sentence, <= 40 words>"
+}
+
+The explanation should name the main morally diagnostic feature in one short sentence.
+Example of a valid answer:
+{"task_a_more_morally_problematic":"B","task_b_worse_inward_orientation":"B","task_c_primary_reason":"motive","brief_explanation":"Case B has the same outward act but a more manipulative motive."}
+Output one JSON object only.
+Do not restate the cases.
+Do not use labels like "Task A:" or "Task B:" in the answer.
+For the first two fields, output only "A", "B", or "Same".
+Do not output the literal placeholder string "A|B|Same".
+For task_c_primary_reason, output only one lowercase label from the schema.
+Do not copy the example labels mechanically; choose the labels that fit the current cases.
+The first character of your reply must be "{" and the last character must be "}".

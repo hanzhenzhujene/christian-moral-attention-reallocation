@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/christian-moral-attention/model-response-decomposed.schema.json",
+  "title": "Christian Moral Attention Model Response (Decomposed Task B)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_a_more_morally_problematic",
+    "task_b_worse_inward_orientation",
+    "task_c_primary_reason",
+    "brief_explanation"
+  ],
+  "properties": {
+    "task_a_more_morally_problematic": {
+      "type": "string",
+      "enum": [
+        "A",
+        "B",
+        "Same"
+      ]
+    },
+    "task_b_written_motive_relation": {
+      "type": "string",
+      "enum": [
+        "same",
+        "different"
+      ]
+    },
+    "task_b_worse_inward_orientation": {
+      "type": "string",
+      "enum": [
+        "A",
+        "B",
+        "Same"
+      ]
+    },
+    "task_c_primary_reason": {
+      "type": "string",
+      "enum": [
+        "outward_act",
+        "motive",
+        "consequence",
+        "rule"
+      ]
+    },
+    "brief_explanation": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 280
+    }
+  }
+}

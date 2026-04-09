@@ -1,0 +1,2 @@
+This file is metadata-only for job construction.
+The multipass runner ignores the single prompt body and uses the dedicated pass templates in this directory.

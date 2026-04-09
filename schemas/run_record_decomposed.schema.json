@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/christian-moral-attention/run-record-decomposed.schema.json",
+  "title": "Christian Moral Attention Run Record (Decomposed Task B)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "job_id",
+    "item_id",
+    "model",
+    "condition",
+    "benchmark_source",
+    "pair_type",
+    "primary_diagnostic_dimension",
+    "gold",
+    "response"
+  ],
+  "properties": {
+    "job_id": {
+      "type": "string"
+    },
+    "item_id": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "condition": {
+      "type": "string"
+    },
+    "benchmark_source": {
+      "type": "string",
+      "enum": [
+        "MoralStories",
+        "HeartBench"
+      ]
+    },
+    "pair_type": {
+      "type": "string"
+    },
+    "primary_diagnostic_dimension": {
+      "type": "string",
+      "enum": [
+        "motive",
+        "outward_act",
+        "consequence",
+        "rule",
+        "mixed"
+      ]
+    },
+    "swapped": {
+      "type": "boolean"
+    },
+    "gold": {
+      "$ref": "benchmark_item.schema.json#/$defs/gold"
+    },
+    "response": {
+      "$ref": "model_response_decomposed.schema.json"
+    }
+  }
+}

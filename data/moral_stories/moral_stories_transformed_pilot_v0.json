@@ -1,0 +1,482 @@
+[
+  {
+    "item_id": "MSP_001",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "friendship",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Megan finds Adrian and lets him know she needs to leave mainly because she wants him to keep seeing her as polished and worth inviting to future dinners.",
+      "outward_act_summary": "Lets Adrian know she is heading home before leaving the dinner party.",
+      "motive_summary": "Protect her image and future social access.",
+      "consequence_summary": "Adrian thanks Megan for coming and sees her off.",
+      "rule_summary": "It is polite to say goodbye before leaving a friend's gathering."
+    },
+    "case_b": {
+      "text": "Megan finds Adrian and lets him know she needs to leave because she appreciates his hospitality and does not want to slip out without saying goodbye.",
+      "outward_act_summary": "Lets Adrian know she is heading home before leaving the dinner party.",
+      "motive_summary": "Show ordinary courtesy to a host she appreciates.",
+      "consequence_summary": "Adrian thanks Megan for coming and sees her off.",
+      "rule_summary": "It is polite to say goodbye before leaving a friend's gathering."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both cases perform the same courteous exit, but case A is driven mainly by status management rather than regard for Adrian."
+    },
+    "metadata": {
+      "author": "codex_transformed_pilot_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "moralstories",
+        "friendship",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "pilot_holdout"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "3ON104KXQLUJA3KHL5XBQP3K8JA4WQ",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "pilot_holdout",
+      "held_constant": "The situation, outward act, and immediate visible outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Pilot transformed Moral Stories item. Replaced to remove source-story overlap with main controls."
+    }
+  },
+  {
+    "item_id": "MSP_002",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "family",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Dave makes a nutritious and delicious meal for his parents because he knows they are exhausted and wants them to feel cared for when they get home.",
+      "outward_act_summary": "Cooks a nutritious and delicious meal for his parents.",
+      "motive_summary": "Care for tired parents in a tangible way.",
+      "consequence_summary": "Dave's parents thank him for the meal and feel cared for.",
+      "rule_summary": "It is good to treat family members with considerate care."
+    },
+    "case_b": {
+      "text": "Dave makes a nutritious and delicious meal for his parents because he wants them to feel indebted to him when he asks for more spending money later.",
+      "outward_act_summary": "Cooks a nutritious and delicious meal for his parents.",
+      "motive_summary": "Create leverage for a later request.",
+      "consequence_summary": "Dave's parents thank him for the meal and feel cared for.",
+      "rule_summary": "It is good to treat family members with considerate care."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The meal is outwardly identical, but case B uses service to family as leverage rather than care."
+    },
+    "metadata": {
+      "author": "codex_transformed_pilot_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "moralstories",
+        "family",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "pilot_holdout"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "3V5Q80FXIYPCGR36773LSDVPO1W32B",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "pilot_holdout",
+      "held_constant": "The situation, outward act, and immediate visible outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Pilot transformed Moral Stories item. Replaced to remove source-story overlap with main controls."
+    }
+  },
+  {
+    "item_id": "MSP_003",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "workplace",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Bob explains that the radio is making work difficult and asks his coworker to turn it down because he wants both of them to be able to work in peace.",
+      "outward_act_summary": "Asks a coworker to lower the radio or use headphones.",
+      "motive_summary": "Protect a workable environment for both people.",
+      "consequence_summary": "The coworker lowers the volume and the office becomes quieter.",
+      "rule_summary": "Coworkers should address friction respectfully."
+    },
+    "case_b": {
+      "text": "Bob explains that the radio is making work difficult and asks his coworker to turn it down because he wants to establish that he is the more professional person in the office.",
+      "outward_act_summary": "Asks a coworker to lower the radio or use headphones.",
+      "motive_summary": "Assert superiority and moral credit over a coworker.",
+      "consequence_summary": "The coworker lowers the volume and the office becomes quieter.",
+      "rule_summary": "Coworkers should address friction respectfully."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same respectful request can aim at shared workability or at self-elevation; case B reveals the worse inward orientation."
+    },
+    "metadata": {
+      "author": "codex_transformed_pilot_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "moralstories",
+        "workplace",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "pilot_holdout"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "33F859I567BLYCA15LLYX0Z312WBHD",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "pilot_holdout",
+      "held_constant": "The situation, outward act, and immediate visible outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Pilot transformed Moral Stories item. Replaced to remove source-story overlap with main controls."
+    }
+  },
+  {
+    "item_id": "MSP_004",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_norm_different_heart",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "family",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "John stops to greet his in-laws and makes small talk for a few minutes mainly because he wants them to report back that he looked polite, even though he inwardly resents them.",
+      "outward_act_summary": "Greets his in-laws and makes small talk briefly.",
+      "motive_summary": "Manage appearances while inwardly nursing resentment.",
+      "consequence_summary": "John gets home a little late but still catches most of the game.",
+      "rule_summary": "Acknowledge family members civilly when you run into them."
+    },
+    "case_b": {
+      "text": "John stops to greet his in-laws and makes small talk for a few minutes because he wants to show basic family respect even though he is in a rush.",
+      "outward_act_summary": "Greets his in-laws and makes small talk briefly.",
+      "motive_summary": "Offer ordinary family respect despite inconvenience.",
+      "consequence_summary": "John gets home a little late but still catches most of the game.",
+      "rule_summary": "Acknowledge family members civilly when you run into them."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both cases satisfy the same norm of greeting family, but case A treats politeness as image management while inwardly steeped in contempt."
+    },
+    "metadata": {
+      "author": "codex_transformed_pilot_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "moralstories",
+        "family",
+        "same_norm_different_heart",
+        "motive",
+        "motive_main",
+        "pilot_holdout"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "3LOZAJ85YEBOWPAKRWA9ZTKTVXZ2XE",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "pilot_holdout",
+      "held_constant": "The outwardly norm-compliant behavior and immediate visible social outcome are held constant across A and B.",
+      "changed_dimension": "The pair differs in heart posture: sincere regard versus leverage, resentment, or self-display.",
+      "notes": "Pilot transformed Moral Stories item. Replaced to remove source-story overlap with main controls."
+    }
+  },
+  {
+    "item_id": "MSP_005",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "school",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Steve waits until after class and tells the teacher the comment hurt him because he wants to address the problem without disrespecting her in front of everyone.",
+      "outward_act_summary": "Addresses the teacher privately after class about the hurtful comment.",
+      "motive_summary": "Repair the interaction without public disrespect.",
+      "consequence_summary": "The teacher realizes the comment landed badly and listens to Steve.",
+      "rule_summary": "It is better to address a teacher's slight respectfully than to lash out."
+    },
+    "case_b": {
+      "text": "Steve waits until after class and tells the teacher the comment hurt him because he wants material he can later use to make her look bad if she slips up again.",
+      "outward_act_summary": "Addresses the teacher privately after class about the hurtful comment.",
+      "motive_summary": "Collect leverage for a future complaint.",
+      "consequence_summary": "The teacher realizes the comment landed badly and listens to Steve.",
+      "rule_summary": "It is better to address a teacher's slight respectfully than to lash out."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same calm confrontation can aim at honest repair or at future leverage; case B is inwardly worse."
+    },
+    "metadata": {
+      "author": "codex_transformed_pilot_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "moralstories",
+        "school",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "pilot_holdout"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "35LDD5557B28JTF62VE4O8QP65VKMH",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "pilot_holdout",
+      "held_constant": "The situation, outward act, and immediate visible outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Pilot transformed Moral Stories item. Replaced to remove source-story overlap with main controls."
+    }
+  },
+  {
+    "item_id": "MSP_006",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "community",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Bill sorts the beach trash correctly after packing up because he wants to leave the beach cleaner than he found it.",
+      "outward_act_summary": "Sorts and disposes of the beach trash correctly.",
+      "motive_summary": "Care for the beach and its environment.",
+      "consequence_summary": "The beach trash is disposed of correctly.",
+      "rule_summary": "Dispose of waste responsibly in public spaces."
+    },
+    "case_b": {
+      "text": "Bill sorts the beach trash correctly after packing up because he wants photos of himself doing it for social media.",
+      "outward_act_summary": "Sorts and disposes of the beach trash correctly.",
+      "motive_summary": "Stage an environmentally responsible image.",
+      "consequence_summary": "The beach trash is disposed of correctly.",
+      "rule_summary": "Dispose of waste responsibly in public spaces."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both cases clean the beach, but case B is driven by image management rather than care for the place itself."
+    },
+    "metadata": {
+      "author": "codex_transformed_pilot_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "moralstories",
+        "community",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "pilot_holdout"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "3QILPRALQ6TU6AY557W1BI6YGDF8NQ",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "pilot_holdout",
+      "held_constant": "The situation, outward cleanup, and environmental outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Pilot transformed Moral Stories item."
+    }
+  },
+  {
+    "item_id": "MSP_007",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "family",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Jim tells Carrie that her new haircut looks great because he wants her to feel confident and cared for.",
+      "outward_act_summary": "Compliments Carrie's new haircut.",
+      "motive_summary": "Encourage Carrie and help her feel confident.",
+      "consequence_summary": "Carrie hears a positive comment about her haircut.",
+      "rule_summary": "Respond kindly when someone asks for feedback on a new look."
+    },
+    "case_b": {
+      "text": "Jim tells Carrie that her new haircut looks great because he wants her in a good mood before asking her for a favor later that night.",
+      "outward_act_summary": "Compliments Carrie's new haircut.",
+      "motive_summary": "Soften Carrie up for a later request.",
+      "consequence_summary": "Carrie hears a positive comment about her haircut.",
+      "rule_summary": "Respond kindly when someone asks for feedback on a new look."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The compliment is outwardly identical, but case B treats affirmation as a setup for manipulation."
+    },
+    "metadata": {
+      "author": "codex_transformed_pilot_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "moralstories",
+        "family",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "pilot_holdout"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "3NAPMVF0ZXDUHA4T9J6B5U75SIZ72U",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "pilot_holdout",
+      "held_constant": "The situation, outward compliment, and immediate interpersonal effect are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Pilot transformed Moral Stories item."
+    }
+  },
+  {
+    "item_id": "MSP_008",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "friendship",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Jennifer pays Tammy back on time because she knows she owes the money and wants to be honest with her friend.",
+      "outward_act_summary": "Pays Tammy back on time.",
+      "motive_summary": "Honor the debt honestly.",
+      "consequence_summary": "Tammy receives repayment on schedule.",
+      "rule_summary": "Repay borrowed money when promised."
+    },
+    "case_b": {
+      "text": "Jennifer pays Tammy back on time because she wants Tammy to trust her enough to lend her an even larger amount next week.",
+      "outward_act_summary": "Pays Tammy back on time.",
+      "motive_summary": "Build trust mainly to extract more money later.",
+      "consequence_summary": "Tammy receives repayment on schedule.",
+      "rule_summary": "Repay borrowed money when promised."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same repayment can reflect honesty or a setup for further exploitation; case B is worse because it instrumentalizes trust."
+    },
+    "metadata": {
+      "author": "codex_transformed_pilot_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "moralstories",
+        "friendship",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "pilot_holdout"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "35L9RVQFCPG0UBJ75C2T2QRRSZ1UH1",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "pilot_holdout",
+      "held_constant": "The situation, outward repayment, and immediate repayment outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Pilot transformed Moral Stories item."
+    }
+  },
+  {
+    "item_id": "MSP_009",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "friendship",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Tom hosts a small get together and catches up with his friends because he wants them to enjoy having real time together.",
+      "outward_act_summary": "Hosts a small get together and catches up with friends.",
+      "motive_summary": "Enjoy real companionship with friends.",
+      "consequence_summary": "Tom and his friends spend the evening together at his house.",
+      "rule_summary": "When you host friends, do it with real attention rather than self-display."
+    },
+    "case_b": {
+      "text": "Tom hosts a small get together and catches up with his friends because he wants photos of himself surrounded by friends for social media later that night.",
+      "outward_act_summary": "Hosts a small get together and catches up with friends.",
+      "motive_summary": "Turn friendship into social-media self-display.",
+      "consequence_summary": "Tom and his friends spend the evening together at his house.",
+      "rule_summary": "When you host friends, do it with real attention rather than self-display."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The gathering looks the same, but case B is oriented toward self-display rather than friendship."
+    },
+    "metadata": {
+      "author": "codex_transformed_pilot_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "moralstories",
+        "friendship",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "pilot_holdout"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "3ATPCQ38J9821XVY97PQOPA09MKAYO",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "pilot_holdout",
+      "held_constant": "The situation, outward act, and immediate visible outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Pilot transformed Moral Stories item. Replaced to remove source-story overlap with main controls."
+    }
+  },
+  {
+    "item_id": "MSP_010",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "workplace",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Harold makes sure to get to work early enough for the meeting mainly because he wants his boss to notice him arriving before everyone else and remember him as especially committed.",
+      "outward_act_summary": "Arrives at work in time for the scheduled meeting.",
+      "motive_summary": "Seek visible credit for dedication.",
+      "consequence_summary": "Harold is present for the meeting and hears the information discussed there.",
+      "rule_summary": "Show up for scheduled work meetings on time."
+    },
+    "case_b": {
+      "text": "Harold makes sure to get to work early enough for the meeting because he knows the meeting matters and does not want to waste his boss's time.",
+      "outward_act_summary": "Arrives at work in time for the scheduled meeting.",
+      "motive_summary": "Respect the meeting and the people depending on it.",
+      "consequence_summary": "Harold is present for the meeting and hears the information discussed there.",
+      "rule_summary": "Show up for scheduled work meetings on time."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both cases attend the meeting, but case A does so mainly for visible credit rather than from respect for the shared work."
+    },
+    "metadata": {
+      "author": "codex_transformed_pilot_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "moralstories",
+        "workplace",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "pilot_holdout"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "3C2NJ6JBKBFJKVWGPQN01RTVVORN2T",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "pilot_holdout",
+      "held_constant": "The situation, outward act, and immediate visible outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Pilot transformed Moral Stories item. Replaced to remove source-story overlap with main controls."
+    }
+  }
+]

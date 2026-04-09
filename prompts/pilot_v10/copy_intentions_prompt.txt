@@ -1,0 +1,20 @@
+You will read two short moral cases and copy only the written intention or motive for each case.
+
+Read only what is written. Do not infer hidden motives.
+If the case contains an explicit "Intention:" line, copy that intention content as literally as possible.
+If there is no explicit "Intention:" line, copy the shortest phrase that states why the person acts.
+
+Case A:
+{{case_a}}
+
+Case B:
+{{case_b}}
+
+Return exactly this JSON shape:
+{
+  "case_a_written_intention_copy": "<copied intention text for Case A>",
+  "case_b_written_intention_copy": "<copied intention text for Case B>"
+}
+
+Output one JSON object only.
+The first character of your reply must be "{" and the last character must be "}".

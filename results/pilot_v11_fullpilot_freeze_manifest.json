@@ -1,0 +1,93 @@
+{
+  "name": "paper_first_pilot_execution_v11_fullpilot",
+  "models": [
+    {
+      "alias": "Qwen-0.5B-Instruct",
+      "hf_model_id": "Qwen/Qwen2.5-0.5B-Instruct"
+    },
+    {
+      "alias": "Qwen-1.5B-Instruct",
+      "hf_model_id": "Qwen/Qwen2.5-1.5B-Instruct"
+    }
+  ],
+  "inference": {
+    "prompt_mode": "chat",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "n": 1,
+    "max_new_tokens": 120,
+    "max_attempts": 2,
+    "device": "cpu",
+    "dtype": "auto"
+  },
+  "frozen_files": [
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/configs/pilot_execution_v11_fullpilot.json",
+      "sha256": "02a0eefa83ea49d2231dfa82acc3f67c11ad2b013369001764f4a5b31fed0c36"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/configs/paper_first_study_v1.json",
+      "sha256": "3a5540036d32b27a8b02337fdeb62f335bc86347cdff698dfc34f96715a4ab45"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/data/study/paper_first_pilot_v1.json",
+      "sha256": "0d3aa25a48904e3832862c4c355a83a0b6eee8456f5b89e5ef9b2c93189d75a2"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/results/pilot_v11_fullpilot_jobs.jsonl",
+      "sha256": "62d84219d02eecb11f64de705bbe5056744f46ba90b24915384ccabdf4955840"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/schemas/run_record.schema.json",
+      "sha256": "0fcdbb5e6f1339f53b33285f5f61fbadd4b6d7d2bfd371cee54680e5b50732e6"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/schemas/model_response.schema.json",
+      "sha256": "6528df42fb4148aa0218e0ca8e632643859431f9084ab3e987675b5b5fdce58f"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/prompts/pilot_v10/baseline_prompt.txt",
+      "sha256": "1a324743d393dec3efe59301151c0a17d304481d5f5df38a614f6844f21ba2c6"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/prompts/pilot_v10/christian_heart_prompt.txt",
+      "sha256": "1a324743d393dec3efe59301151c0a17d304481d5f5df38a614f6844f21ba2c6"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/prompts/pilot_v10/copy_intentions_prompt.txt",
+      "sha256": "0d7859b7ed8eca2d5fc9282490f67baf400222232294f019a13e6a0535f289eb"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/prompts/pilot_v10/relation_prompt.txt",
+      "sha256": "b08804999e4f5dac44b8142f11cb995fe0a57aa83d5e315b1229fda3686c5460"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/prompts/pilot_v10/secular_matched_prompt.txt",
+      "sha256": "1a324743d393dec3efe59301151c0a17d304481d5f5df38a614f6844f21ba2c6"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/prompts/pilot_v10/task_ac_baseline_prompt.txt",
+      "sha256": "be9a4ca2761897796a9550b2fb23da1df22c19b1f50d6d3af411d9b405ac830c"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/prompts/pilot_v10/task_ac_christian_heart_prompt.txt",
+      "sha256": "f6262f1770495bd98d6cf6df49e1ef7dedc67309f32fab82f78c580e07624c4d"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/prompts/pilot_v10/task_ac_secular_matched_prompt.txt",
+      "sha256": "b5727a4eed984c38ef095ac323505138e42769806264404d1ab97d5b4caacd9f"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/prompts/pilot_v10/task_b_baseline_prompt.txt",
+      "sha256": "07072eff3c09b561abd833b10527cc55dfb8bf9dc31bb2e08b5d19a6c3091157"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/prompts/pilot_v10/task_b_christian_heart_prompt.txt",
+      "sha256": "ebd88c73be1e2c440edc7aa118b614c4b5b95fa186dbe83178d280cd5e37a523"
+    },
+    {
+      "path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/prompts/pilot_v10/task_b_secular_matched_prompt.txt",
+      "sha256": "4fc2afd93cad3e3c8a5d61fabbbef2be83b31e8351e965e381dcb4238e040dc0"
+    }
+  ]
+}

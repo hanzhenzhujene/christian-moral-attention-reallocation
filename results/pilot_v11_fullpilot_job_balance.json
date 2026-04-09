@@ -1,0 +1,53 @@
+[
+  {
+    "condition": "baseline",
+    "n_jobs": 20,
+    "swapped_false": 9,
+    "swapped_true": 11,
+    "swap_rate_true": 0.55,
+    "task_a_gold_presented": {
+      "A": 10,
+      "B": 10
+    },
+    "task_b_gold_presented": {
+      "A": 6,
+      "B": 9,
+      "Same": 5
+    },
+    "task_a_presented_a_b_gap": 0.0
+  },
+  {
+    "condition": "christian_heart",
+    "n_jobs": 20,
+    "swapped_false": 7,
+    "swapped_true": 13,
+    "swap_rate_true": 0.65,
+    "task_a_gold_presented": {
+      "A": 10,
+      "B": 10
+    },
+    "task_b_gold_presented": {
+      "A": 6,
+      "B": 9,
+      "Same": 5
+    },
+    "task_a_presented_a_b_gap": 0.0
+  },
+  {
+    "condition": "secular_matched",
+    "n_jobs": 20,
+    "swapped_false": 9,
+    "swapped_true": 11,
+    "swap_rate_true": 0.55,
+    "task_a_gold_presented": {
+      "A": 10,
+      "B": 10
+    },
+    "task_b_gold_presented": {
+      "A": 8,
+      "B": 7,
+      "Same": 5
+    },
+    "task_a_presented_a_b_gap": 0.0
+  }
+]

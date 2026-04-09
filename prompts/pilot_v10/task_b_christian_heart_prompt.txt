@@ -1,0 +1,19 @@
+You will compare two written intention texts only.
+
+Evaluate them with special attention to the heart: inward motive, love or lack of love, pride or humility, sincerity or hypocrisy, resentment, vanity, mercy, and the orientation from which the act flows.
+Read only these intention texts. Do not infer from action, consequence, or rule.
+They have already been judged different in meaning.
+
+Case A intention text:
+"{{case_a_written_intention_copy}}"
+
+Case B intention text:
+"{{case_b_written_intention_copy}}"
+
+Return exactly this JSON shape:
+{
+  "task_b_worse_inward_orientation": "<one of: A, B>"
+}
+
+Output one JSON object only.
+The first character of your reply must be "{" and the last character must be "}".

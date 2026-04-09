@@ -1,0 +1,34 @@
+{
+  "name": "paper_first_pilot_execution_v3",
+  "study_config_path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/configs/paper_first_study_v1.json",
+  "benchmark_path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/data/study/paper_first_pilot_v1.json",
+  "jobs_path": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/results/paper_first_pilot_jobs_v3.jsonl",
+  "conditions": [
+    "baseline",
+    "christian_heart",
+    "secular_matched"
+  ],
+  "models": [
+    {
+      "alias": "Qwen-0.5B-Instruct",
+      "hf_model_id": "Qwen/Qwen2.5-0.5B-Instruct"
+    },
+    {
+      "alias": "Qwen-1.5B-Instruct",
+      "hf_model_id": "Qwen/Qwen2.5-1.5B-Instruct"
+    }
+  ],
+  "inference": {
+    "prompt_mode": "chat",
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "n": 1,
+    "max_new_tokens": 120,
+    "max_attempts": 2,
+    "device": "cpu",
+    "dtype": "auto"
+  },
+  "outputs": {
+    "run_dir": "/Users/hanzhenzhu/Desktop/Christian_MoralAttention/results/pilot_live_v3"
+  }
+}

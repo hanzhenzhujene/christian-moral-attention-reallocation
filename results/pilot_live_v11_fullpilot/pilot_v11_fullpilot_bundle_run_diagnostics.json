@@ -1,0 +1,246 @@
+[
+  {
+    "model": "Qwen-0.5B-Instruct",
+    "condition": "baseline",
+    "n_items": 20,
+    "task_a_answer_distribution": {
+      "A": 0.3,
+      "B": 0.7
+    },
+    "task_b_answer_distribution": {
+      "A": 0.15,
+      "B": 0.6,
+      "Same": 0.25
+    },
+    "task_a_gold_distribution": {
+      "A": 0.5,
+      "B": 0.5
+    },
+    "task_b_gold_distribution": {
+      "A": 0.3,
+      "B": 0.45,
+      "Same": 0.25
+    },
+    "task_b_written_motive_relation_distribution": {},
+    "task_b_relation_consistency_rate": null,
+    "task_a_excess_a_rate": -0.2,
+    "task_b_excess_a_rate": -0.15,
+    "reason_distribution": {
+      "outward_act": 0.2,
+      "rule": 0.8
+    },
+    "task_a_accuracy_swapped_false": 0.6667,
+    "task_a_accuracy_swapped_true": 0.5455,
+    "task_b_accuracy_swapped_false": 0.8889,
+    "task_b_accuracy_swapped_true": 0.8182,
+    "task_a_select_a_rate_swapped_false": 0.2222,
+    "task_a_select_a_rate_swapped_true": 0.3636,
+    "task_b_select_a_rate_swapped_false": null,
+    "task_b_select_a_rate_swapped_true": 0.2727,
+    "same_rate_task_a": 0.0,
+    "same_rate_task_b": 0.25
+  },
+  {
+    "model": "Qwen-0.5B-Instruct",
+    "condition": "christian_heart",
+    "n_items": 20,
+    "task_a_answer_distribution": {
+      "A": 0.5,
+      "B": 0.5
+    },
+    "task_b_answer_distribution": {
+      "A": 0.65,
+      "B": 0.1,
+      "Same": 0.25
+    },
+    "task_a_gold_distribution": {
+      "A": 0.5,
+      "B": 0.5
+    },
+    "task_b_gold_distribution": {
+      "A": 0.3,
+      "B": 0.45,
+      "Same": 0.25
+    },
+    "task_b_written_motive_relation_distribution": {},
+    "task_b_relation_consistency_rate": null,
+    "task_a_excess_a_rate": 0.0,
+    "task_b_excess_a_rate": 0.35,
+    "reason_distribution": {
+      "outward_act": 0.55,
+      "rule": 0.45
+    },
+    "task_a_accuracy_swapped_false": 0.7143,
+    "task_a_accuracy_swapped_true": 0.5385,
+    "task_b_accuracy_swapped_false": 0.2857,
+    "task_b_accuracy_swapped_true": 0.6923,
+    "task_a_select_a_rate_swapped_false": 0.2857,
+    "task_a_select_a_rate_swapped_true": 0.6154,
+    "task_b_select_a_rate_swapped_false": 0.7143,
+    "task_b_select_a_rate_swapped_true": 0.6154,
+    "same_rate_task_a": 0.0,
+    "same_rate_task_b": 0.25
+  },
+  {
+    "model": "Qwen-0.5B-Instruct",
+    "condition": "secular_matched",
+    "n_items": 20,
+    "task_a_answer_distribution": {
+      "A": 0.45,
+      "B": 0.55
+    },
+    "task_b_answer_distribution": {
+      "A": 0.5,
+      "B": 0.25,
+      "Same": 0.25
+    },
+    "task_a_gold_distribution": {
+      "A": 0.5,
+      "B": 0.5
+    },
+    "task_b_gold_distribution": {
+      "A": 0.4,
+      "B": 0.35,
+      "Same": 0.25
+    },
+    "task_b_written_motive_relation_distribution": {},
+    "task_b_relation_consistency_rate": null,
+    "task_a_excess_a_rate": -0.05,
+    "task_b_excess_a_rate": 0.1,
+    "reason_distribution": {
+      "motive": 0.25,
+      "outward_act": 0.55,
+      "rule": 0.2
+    },
+    "task_a_accuracy_swapped_false": 0.3333,
+    "task_a_accuracy_swapped_true": 0.3636,
+    "task_b_accuracy_swapped_false": 0.8889,
+    "task_b_accuracy_swapped_true": 0.9091,
+    "task_a_select_a_rate_swapped_false": 0.5556,
+    "task_a_select_a_rate_swapped_true": 0.3636,
+    "task_b_select_a_rate_swapped_false": 0.2222,
+    "task_b_select_a_rate_swapped_true": 0.7273,
+    "same_rate_task_a": 0.0,
+    "same_rate_task_b": 0.25
+  },
+  {
+    "model": "Qwen-1.5B-Instruct",
+    "condition": "baseline",
+    "n_items": 20,
+    "task_a_answer_distribution": {
+      "B": 1.0
+    },
+    "task_b_answer_distribution": {
+      "A": 0.15,
+      "B": 0.6,
+      "Same": 0.25
+    },
+    "task_a_gold_distribution": {
+      "A": 0.5,
+      "B": 0.5
+    },
+    "task_b_gold_distribution": {
+      "A": 0.3,
+      "B": 0.45,
+      "Same": 0.25
+    },
+    "task_b_written_motive_relation_distribution": {},
+    "task_b_relation_consistency_rate": null,
+    "task_a_excess_a_rate": -0.5,
+    "task_b_excess_a_rate": -0.15,
+    "reason_distribution": {
+      "motive": 0.75,
+      "outward_act": 0.25
+    },
+    "task_a_accuracy_swapped_false": 0.8889,
+    "task_a_accuracy_swapped_true": 0.1818,
+    "task_b_accuracy_swapped_false": 1.0,
+    "task_b_accuracy_swapped_true": 0.7273,
+    "task_a_select_a_rate_swapped_false": null,
+    "task_a_select_a_rate_swapped_true": null,
+    "task_b_select_a_rate_swapped_false": 0.1111,
+    "task_b_select_a_rate_swapped_true": 0.1818,
+    "same_rate_task_a": 0.0,
+    "same_rate_task_b": 0.25
+  },
+  {
+    "model": "Qwen-1.5B-Instruct",
+    "condition": "christian_heart",
+    "n_items": 20,
+    "task_a_answer_distribution": {
+      "B": 1.0
+    },
+    "task_b_answer_distribution": {
+      "A": 0.2,
+      "B": 0.55,
+      "Same": 0.25
+    },
+    "task_a_gold_distribution": {
+      "A": 0.5,
+      "B": 0.5
+    },
+    "task_b_gold_distribution": {
+      "A": 0.3,
+      "B": 0.45,
+      "Same": 0.25
+    },
+    "task_b_written_motive_relation_distribution": {},
+    "task_b_relation_consistency_rate": null,
+    "task_a_excess_a_rate": -0.5,
+    "task_b_excess_a_rate": -0.1,
+    "reason_distribution": {
+      "motive": 0.75,
+      "outward_act": 0.25
+    },
+    "task_a_accuracy_swapped_false": 1.0,
+    "task_a_accuracy_swapped_true": 0.2308,
+    "task_b_accuracy_swapped_false": 1.0,
+    "task_b_accuracy_swapped_true": 0.8462,
+    "task_a_select_a_rate_swapped_false": null,
+    "task_a_select_a_rate_swapped_true": null,
+    "task_b_select_a_rate_swapped_false": null,
+    "task_b_select_a_rate_swapped_true": 0.3077,
+    "same_rate_task_a": 0.0,
+    "same_rate_task_b": 0.25
+  },
+  {
+    "model": "Qwen-1.5B-Instruct",
+    "condition": "secular_matched",
+    "n_items": 20,
+    "task_a_answer_distribution": {
+      "B": 1.0
+    },
+    "task_b_answer_distribution": {
+      "A": 0.15,
+      "B": 0.6,
+      "Same": 0.25
+    },
+    "task_a_gold_distribution": {
+      "A": 0.5,
+      "B": 0.5
+    },
+    "task_b_gold_distribution": {
+      "A": 0.4,
+      "B": 0.35,
+      "Same": 0.25
+    },
+    "task_b_written_motive_relation_distribution": {},
+    "task_b_relation_consistency_rate": null,
+    "task_a_excess_a_rate": -0.5,
+    "task_b_excess_a_rate": -0.25,
+    "reason_distribution": {
+      "motive": 0.75,
+      "outward_act": 0.25
+    },
+    "task_a_accuracy_swapped_false": 0.8889,
+    "task_a_accuracy_swapped_true": 0.1818,
+    "task_b_accuracy_swapped_false": 0.8889,
+    "task_b_accuracy_swapped_true": 0.6364,
+    "task_a_select_a_rate_swapped_false": null,
+    "task_a_select_a_rate_swapped_true": null,
+    "task_b_select_a_rate_swapped_false": null,
+    "task_b_select_a_rate_swapped_true": 0.2727,
+    "same_rate_task_a": 0.0,
+    "same_rate_task_b": 0.25
+  }
+]

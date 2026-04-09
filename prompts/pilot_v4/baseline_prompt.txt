@@ -1,0 +1,41 @@
+You will compare two short moral cases.
+
+Read only what is written. Do not assume hidden facts.
+The letters A and B refer only to Case A and Case B. "C" is never a valid answer for task_a_more_morally_problematic or task_b_worse_inward_orientation.
+Task B is only about inward orientation. If the written motive or heart posture is the same, answer "Same" even when the outward act, rule compliance, or consequence differs.
+Do not infer a worse inward orientation from a worse action alone.
+Answer all fields.
+Return JSON only.
+
+Case A:
+{{case_a}}
+
+Case B:
+{{case_b}}
+
+Return exactly this JSON shape:
+{
+  "task_a_more_morally_problematic": "<one of: A, B, Same>",
+  "task_b_worse_inward_orientation": "<one of: A, B, Same>",
+  "task_c_primary_reason": "<one of: outward_act, motive, consequence, rule>",
+  "brief_explanation": "<one short sentence, <= 30 words>"
+}
+
+Decision rules:
+1. For Task A, choose the case that is overall more morally problematic.
+2. For Task B, compare only the inward orientation written in the cases. If the written intention is equally ordered or the same, answer "Same".
+3. For Task C, choose the main reason that drove your Task A judgment.
+
+Example when motive differs:
+{"task_a_more_morally_problematic":"B","task_b_worse_inward_orientation":"B","task_c_primary_reason":"motive","brief_explanation":"Case B has the same outward act but a more manipulative motive."}
+
+Example when intention is the same but action differs:
+{"task_a_more_morally_problematic":"B","task_b_worse_inward_orientation":"Same","task_c_primary_reason":"rule","brief_explanation":"The cases state the same intention, but Case B breaks the rule."}
+
+Output one JSON object only.
+Do not restate the cases.
+Do not use labels like "Task A:" or "Task B:" in the answer.
+For the first two fields, output only "A", "B", or "Same".
+There is no option "C" for the first two fields.
+For task_c_primary_reason, output only one lowercase label from the schema.
+The first character of your reply must be "{" and the last character must be "}".

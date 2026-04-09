@@ -1,0 +1,43 @@
+You will compare two short moral cases.
+
+Evaluate them with special attention to the heart: inward motive, love or lack of love, pride or humility, sincerity or hypocrisy, resentment, vanity, mercy, and the orientation from which the act flows.
+Read only what is written. Do not assume hidden facts.
+The letters A and B refer only to Case A and Case B. "C" is never a valid answer for task_a_more_morally_problematic or task_b_worse_inward_orientation.
+
+Use the full cases for Task A and Task C.
+
+For Task B only, ignore the action, consequence, and norm details in the full cases and use only this intention block:
+- Case A stated intention: {{case_a_motive_summary}}
+- Case B stated intention: {{case_b_motive_summary}}
+
+Task B rule:
+- If the two stated intentions are the same, answer "Same".
+- If the two stated intentions differ, answer "A" or "B" based only on which stated intention is inwardly worse.
+
+Full Case A:
+{{case_a}}
+
+Full Case B:
+{{case_b}}
+
+Return exactly this JSON shape:
+{
+  "task_a_more_morally_problematic": "<one of: A, B, Same>",
+  "task_b_worse_inward_orientation": "<one of: A, B, Same>",
+  "task_c_primary_reason": "<one of: outward_act, motive, consequence, rule>",
+  "brief_explanation": "<one short sentence, <= 24 words>"
+}
+
+Example when the stated intention differs:
+{"task_a_more_morally_problematic":"B","task_b_worse_inward_orientation":"B","task_c_primary_reason":"motive","brief_explanation":"Case B has the same action but a more manipulative stated intention."}
+
+Example when the stated intention is the same:
+{"task_a_more_morally_problematic":"B","task_b_worse_inward_orientation":"Same","task_c_primary_reason":"rule","brief_explanation":"The stated intention is the same, but Case B violates the governing norm."}
+
+Output one JSON object only.
+Do not restate the cases.
+Do not use labels like "Task A:" or "Task B:" in the answer.
+For the first two fields, output only "A", "B", or "Same".
+There is no option "C" for the first two fields.
+For task_c_primary_reason, output only one lowercase label from the schema.
+The first character of your reply must be "{" and the last character must be "}".

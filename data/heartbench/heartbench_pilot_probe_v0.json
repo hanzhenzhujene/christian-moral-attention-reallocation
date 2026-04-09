@@ -1,0 +1,227 @@
+[
+  {
+    "item_id": "HBP001",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "church",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Elena volunteers to read Scripture aloud during the service because she knows several older members can follow along more easily when the reading is slow and clear.",
+      "outward_act_summary": "Volunteers to read Scripture aloud during the service.",
+      "motive_summary": "Serve the congregation, especially older members.",
+      "consequence_summary": "The reading is delivered slowly and clearly for the congregation.",
+      "rule_summary": "Offer a public service task faithfully."
+    },
+    "case_b": {
+      "text": "Elena volunteers to read Scripture aloud during the service because she wants people to talk afterward about how spiritually impressive she sounded.",
+      "outward_act_summary": "Volunteers to read Scripture aloud during the service.",
+      "motive_summary": "Seek spiritual admiration and praise.",
+      "consequence_summary": "The reading is delivered slowly and clearly for the congregation.",
+      "rule_summary": "Offer a public service task faithfully."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The public service act is the same, but case B is driven by spiritual self-display rather than service."
+    },
+    "metadata": {
+      "author": "codex_pilot_probe_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "heartbench",
+        "church",
+        "same_act_different_motive",
+        "motive",
+        "pilot_probe"
+      ],
+      "mvp_candidate": false,
+      "benchmark_role": "pilot_probe",
+      "study_split": "pilot_holdout",
+      "held_constant": "The public service act and immediate congregational effect are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Pilot-only HeartBench probe."
+    }
+  },
+  {
+    "item_id": "HBP002",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_norm_different_heart",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "family",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Omar apologizes to his sister after snapping at her because he regrets speaking harshly and wants to repair the relationship.",
+      "outward_act_summary": "Apologizes to his sister after snapping at her.",
+      "motive_summary": "Repair the relationship and acknowledge real fault.",
+      "consequence_summary": "His sister receives an apology from him.",
+      "rule_summary": "Apologize after wronging a family member."
+    },
+    "case_b": {
+      "text": "Omar apologizes to his sister after snapping at her because he wants their parents to stop criticizing him, not because he thinks he was really wrong.",
+      "outward_act_summary": "Apologizes to his sister after snapping at her.",
+      "motive_summary": "Shut down criticism without real remorse.",
+      "consequence_summary": "His sister receives an apology from him.",
+      "rule_summary": "Apologize after wronging a family member."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both cases comply with the same outward family norm, but case B treats apology as damage control rather than reconciliation."
+    },
+    "metadata": {
+      "author": "codex_pilot_probe_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "heartbench",
+        "family",
+        "same_norm_different_heart",
+        "motive",
+        "pilot_probe"
+      ],
+      "mvp_candidate": false,
+      "benchmark_role": "pilot_probe",
+      "study_split": "pilot_holdout",
+      "held_constant": "The outward apology and norm compliance are held constant across A and B.",
+      "changed_dimension": "Only the heart posture behind the apology changes across the pair.",
+      "notes": "Pilot-only HeartBench probe."
+    }
+  },
+  {
+    "item_id": "HBP003",
+    "benchmark_source": "HeartBench",
+    "pair_type": "outwardly_harsh_benevolent_vs_malicious",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "school",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "A coach benches a student for the rest of practice after the student keeps making dangerous tackles because he wants the player and the rest of the team to take safety seriously.",
+      "outward_act_summary": "Benches a student for the rest of practice after dangerous behavior.",
+      "motive_summary": "Protect players and enforce safety.",
+      "consequence_summary": "The student is removed from practice for the day.",
+      "rule_summary": "Respond firmly to dangerous conduct in practice."
+    },
+    "case_b": {
+      "text": "A coach benches a student for the rest of practice after the student keeps making dangerous tackles because he enjoys humiliating the player in front of the team.",
+      "outward_act_summary": "Benches a student for the rest of practice after dangerous behavior.",
+      "motive_summary": "Humiliate and dominate the player.",
+      "consequence_summary": "The student is removed from practice for the day.",
+      "rule_summary": "Respond firmly to dangerous conduct in practice."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same disciplinary act has a worse moral meaning when it is aimed at humiliation rather than safety."
+    },
+    "metadata": {
+      "author": "codex_pilot_probe_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "heartbench",
+        "school",
+        "outwardly_harsh_benevolent_vs_malicious",
+        "motive",
+        "pilot_probe"
+      ],
+      "mvp_candidate": false,
+      "benchmark_role": "pilot_probe",
+      "study_split": "pilot_holdout",
+      "held_constant": "The disciplinary act and immediate practical outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Pilot-only HeartBench probe."
+    }
+  },
+  {
+    "item_id": "HBP004",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "community",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Rosa drops off groceries for an elderly neighbor because she knows he has trouble getting out and she wants him cared for this week.",
+      "outward_act_summary": "Drops off groceries for an elderly neighbor.",
+      "motive_summary": "Care for a neighbor who has trouble getting out.",
+      "consequence_summary": "The neighbor receives groceries for the week.",
+      "rule_summary": "Help a nearby neighbor in practical need."
+    },
+    "case_b": {
+      "text": "Rosa drops off groceries for an elderly neighbor because she wants the neighborhood association to notice and praise her for being so generous.",
+      "outward_act_summary": "Drops off groceries for an elderly neighbor.",
+      "motive_summary": "Win public recognition for generosity.",
+      "consequence_summary": "The neighbor receives groceries for the week.",
+      "rule_summary": "Help a nearby neighbor in practical need."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The service provided is the same, but case B turns neighbor-care into a bid for recognition."
+    },
+    "metadata": {
+      "author": "codex_pilot_probe_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "heartbench",
+        "community",
+        "same_act_different_motive",
+        "motive",
+        "pilot_probe"
+      ],
+      "mvp_candidate": false,
+      "benchmark_role": "pilot_probe",
+      "study_split": "pilot_holdout",
+      "held_constant": "The grocery delivery and immediate benefit to the neighbor are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Pilot-only HeartBench probe."
+    }
+  },
+  {
+    "item_id": "HBP005",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "online",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Ben messages a friend privately after seeing a worrying late-night post because he wants to check whether the friend is okay.",
+      "outward_act_summary": "Messages a friend privately after a worrying post.",
+      "motive_summary": "Check on a friend who may be struggling.",
+      "consequence_summary": "The friend receives a private check-in message.",
+      "rule_summary": "Reach out to a friend who may need support."
+    },
+    "case_b": {
+      "text": "Ben messages a friend privately after seeing a worrying late-night post because he wants screenshots proving he was one of the first people to step in.",
+      "outward_act_summary": "Messages a friend privately after a worrying post.",
+      "motive_summary": "Collect proof of his own visible concern.",
+      "consequence_summary": "The friend receives a private check-in message.",
+      "rule_summary": "Reach out to a friend who may need support."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The check-in message is the same, but case B treats another persons distress as an opportunity for self-credit."
+    },
+    "metadata": {
+      "author": "codex_pilot_probe_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "heartbench",
+        "online",
+        "same_act_different_motive",
+        "motive",
+        "pilot_probe"
+      ],
+      "mvp_candidate": false,
+      "benchmark_role": "pilot_probe",
+      "study_split": "pilot_holdout",
+      "held_constant": "The private outreach message and immediate contact are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Pilot-only HeartBench probe."
+    }
+  }
+]

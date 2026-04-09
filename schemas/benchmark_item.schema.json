@@ -1,0 +1,225 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/christian-moral-attention/benchmark-item.schema.json",
+  "title": "Christian Moral Attention Benchmark Item",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "item_id",
+    "benchmark_source",
+    "pair_type",
+    "primary_diagnostic_dimension",
+    "domain",
+    "difficulty",
+    "case_a",
+    "case_b",
+    "gold",
+    "metadata"
+  ],
+  "properties": {
+    "item_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "benchmark_source": {
+      "type": "string",
+      "enum": [
+        "MoralStories",
+        "HeartBench"
+      ]
+    },
+    "pair_type": {
+      "type": "string",
+      "enum": [
+        "same_act_different_motive",
+        "same_norm_different_heart",
+        "same_consequence_different_motive",
+        "same_motive_different_consequence",
+        "same_intention_moral_vs_immoral_action",
+        "outwardly_harsh_benevolent_vs_malicious",
+        "outwardly_good_vain_vs_loving",
+        "outwardly_compliant_resentful_vs_cheerful",
+        "custom"
+      ]
+    },
+    "primary_diagnostic_dimension": {
+      "type": "string",
+      "enum": [
+        "motive",
+        "outward_act",
+        "consequence",
+        "rule",
+        "mixed"
+      ]
+    },
+    "domain": {
+      "type": "string",
+      "enum": [
+        "workplace",
+        "family",
+        "friendship",
+        "school",
+        "church",
+        "community",
+        "online",
+        "caregiving",
+        "public_life",
+        "other"
+      ]
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "medium",
+        "hard"
+      ]
+    },
+    "case_a": {
+      "$ref": "#/$defs/case"
+    },
+    "case_b": {
+      "$ref": "#/$defs/case"
+    },
+    "gold": {
+      "$ref": "#/$defs/gold"
+    },
+    "metadata": {
+      "$ref": "#/$defs/metadata"
+    }
+  },
+  "$defs": {
+    "case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text",
+        "outward_act_summary",
+        "motive_summary"
+      ],
+      "properties": {
+        "text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "outward_act_summary": {
+          "type": "string"
+        },
+        "motive_summary": {
+          "type": "string"
+        },
+        "consequence_summary": {
+          "type": "string"
+        },
+        "rule_summary": {
+          "type": "string"
+        }
+      }
+    },
+    "gold": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "task_a_more_morally_problematic",
+        "task_b_worse_inward_orientation",
+        "task_c_primary_reason",
+        "adjudication_note"
+      ],
+      "properties": {
+        "task_a_more_morally_problematic": {
+          "type": "string",
+          "enum": [
+            "A",
+            "B",
+            "Same"
+          ]
+        },
+        "task_b_worse_inward_orientation": {
+          "type": "string",
+          "enum": [
+            "A",
+            "B",
+            "Same"
+          ]
+        },
+        "task_c_primary_reason": {
+          "type": "string",
+          "enum": [
+            "outward_act",
+            "motive",
+            "consequence",
+            "rule"
+          ]
+        },
+        "adjudication_note": {
+          "type": "string"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "author",
+        "review_status",
+        "tags",
+        "mvp_candidate"
+      ],
+      "properties": {
+        "author": {
+          "type": "string"
+        },
+        "review_status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "reviewed",
+            "approved"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "mvp_candidate": {
+          "type": "boolean"
+        },
+        "source_story_id": {
+          "type": "string"
+        },
+        "source_split": {
+          "type": "string"
+        },
+        "benchmark_role": {
+          "type": "string",
+          "enum": [
+            "motive_main",
+            "same_heart_control",
+            "supplement",
+            "pilot_probe"
+          ]
+        },
+        "study_split": {
+          "type": "string",
+          "enum": [
+            "main",
+            "pilot_holdout",
+            "candidate",
+            "exploratory"
+          ]
+        },
+        "held_constant": {
+          "type": "string"
+        },
+        "changed_dimension": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

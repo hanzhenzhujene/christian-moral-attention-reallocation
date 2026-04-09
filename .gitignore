@@ -1,0 +1,17 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+
+external/
+data/raw/
+annotation/
+
+results/**/*.jsonl
+results/**/*_qualitative_examples.json
+results/mock_*
+!results/pilot_v11_fullpilot_jobs.jsonl

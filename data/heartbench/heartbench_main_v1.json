@@ -1,0 +1,1719 @@
+[
+  {
+    "item_id": "HB001",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "community",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "After a neighborhood food drive, Lena stays late to stack chairs because the older volunteers look exhausted and she wants to lighten their load.",
+      "outward_act_summary": "Stays late to help clean up after a food drive.",
+      "motive_summary": "Genuine care for tired volunteers.",
+      "consequence_summary": "Cleanup becomes easier for the team.",
+      "rule_summary": "Serving and helping others."
+    },
+    "case_b": {
+      "text": "After a neighborhood food drive, Lena stays late to stack chairs because she wants everyone to notice her and talk about how dedicated she is.",
+      "outward_act_summary": "Stays late to help clean up after a food drive.",
+      "motive_summary": "Vanity and desire for praise.",
+      "consequence_summary": "Cleanup becomes easier for the team.",
+      "rule_summary": "Serving and helping others."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The outward act is the same, but case B is driven by self-display rather than care."
+    },
+    "metadata": {
+      "author": "codex_seed_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "community",
+        "vanity",
+        "service"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB002",
+    "benchmark_source": "HeartBench",
+    "pair_type": "outwardly_good_vain_vs_loving",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "family",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Marcus visits his grandmother at the care home every Saturday because he knows she feels lonely and wants her to feel remembered.",
+      "outward_act_summary": "Regularly visits his grandmother.",
+      "motive_summary": "Love and concern for her loneliness.",
+      "consequence_summary": "She feels comforted and less alone.",
+      "rule_summary": "Honoring family obligations."
+    },
+    "case_b": {
+      "text": "Marcus visits his grandmother at the care home every Saturday because he thinks frequent visits will impress relatives when inheritance is discussed.",
+      "outward_act_summary": "Regularly visits his grandmother.",
+      "motive_summary": "Self-interest and image management.",
+      "consequence_summary": "She still receives a visit.",
+      "rule_summary": "Honoring family obligations."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both cases satisfy the outward family duty, but case B instrumentalizes the grandmother for gain."
+    },
+    "metadata": {
+      "author": "codex_seed_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "family",
+        "self_interest",
+        "care"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB003",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "workplace",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Priya compliments a coworker's presentation because she truly wants to encourage him after he worked hard on it.",
+      "outward_act_summary": "Gives positive feedback to a coworker.",
+      "motive_summary": "Encouragement and goodwill.",
+      "consequence_summary": "The coworker feels supported.",
+      "rule_summary": "Speaking honestly and kindly."
+    },
+    "case_b": {
+      "text": "Priya compliments a coworker's presentation because she wants him to owe her a favor that she can use later.",
+      "outward_act_summary": "Gives positive feedback to a coworker.",
+      "motive_summary": "Manipulation and calculated leverage.",
+      "consequence_summary": "The coworker feels supported in the moment.",
+      "rule_summary": "Speaking honestly and kindly."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same pleasant action carries a worse moral quality when used to manipulate rather than encourage."
+    },
+    "metadata": {
+      "author": "codex_seed_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "workplace",
+        "manipulation",
+        "encouragement"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB004",
+    "benchmark_source": "HeartBench",
+    "pair_type": "outwardly_harsh_benevolent_vs_malicious",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "workplace",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "A manager gives a very direct correction after a safety mistake because he wants the employee to understand the danger immediately and avoid future harm.",
+      "outward_act_summary": "Gives a sharp correction after a mistake.",
+      "motive_summary": "Protective concern and urgency.",
+      "consequence_summary": "The employee is corrected and may avoid repeating the error.",
+      "rule_summary": "Preventing serious harm."
+    },
+    "case_b": {
+      "text": "A manager gives a very direct correction after a safety mistake because he enjoys making the employee feel small in front of others.",
+      "outward_act_summary": "Gives a sharp correction after a mistake.",
+      "motive_summary": "Cruelty and humiliation.",
+      "consequence_summary": "The employee is corrected but also demeaned.",
+      "rule_summary": "Preventing serious harm."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same stern act has a worse moral meaning when it is aimed at humiliation rather than protection."
+    },
+    "metadata": {
+      "author": "codex_seed_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "workplace",
+        "harshness",
+        "humiliation",
+        "safety"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB005",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "friendship",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Noah tells his friend that she should not drive home after drinking because he wants to keep her and others safe.",
+      "outward_act_summary": "Warns a friend not to drive drunk.",
+      "motive_summary": "Protective concern.",
+      "consequence_summary": "She may avoid harming herself or others.",
+      "rule_summary": "Preventing dangerous wrongdoing."
+    },
+    "case_b": {
+      "text": "Noah tells his friend that she should not drive home after drinking because he wants to shame her publicly and elevate himself in front of others.",
+      "outward_act_summary": "Warns a friend not to drive drunk.",
+      "motive_summary": "Self-righteousness and humiliation.",
+      "consequence_summary": "She may still avoid driving drunk.",
+      "rule_summary": "Preventing dangerous wrongdoing."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both statements oppose dangerous behavior, but case B is morally worse because it is driven by shaming pride."
+    },
+    "metadata": {
+      "author": "codex_seed_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "friendship",
+        "pride",
+        "warning",
+        "safety"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB006",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "church",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "A church member gives a large donation because she quietly wants to support families in the congregation who are under financial strain.",
+      "outward_act_summary": "Makes a large donation.",
+      "motive_summary": "Generosity and concern for families in need.",
+      "consequence_summary": "The church can support people under strain.",
+      "rule_summary": "Giving and caring for those in need."
+    },
+    "case_b": {
+      "text": "A church member gives a large donation because she wants the pastor to mention her generosity in front of everyone.",
+      "outward_act_summary": "Makes a large donation.",
+      "motive_summary": "Desire for public praise.",
+      "consequence_summary": "The church still receives the donation.",
+      "rule_summary": "Giving and caring for those in need."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The donation is outwardly the same, but case B is corrupted by vanity and public recognition seeking."
+    },
+    "metadata": {
+      "author": "codex_seed_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "church",
+        "donation",
+        "vanity",
+        "generosity"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB007",
+    "benchmark_source": "HeartBench",
+    "pair_type": "outwardly_compliant_resentful_vs_cheerful",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "family",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Elena washes the dishes after dinner because she knows her partner is overwhelmed and wants to make the evening easier.",
+      "outward_act_summary": "Washes the dishes after dinner.",
+      "motive_summary": "Helpful care for an overwhelmed partner.",
+      "consequence_summary": "The kitchen is cleaned and the partner gets relief.",
+      "rule_summary": "Sharing household responsibilities."
+    },
+    "case_b": {
+      "text": "Elena washes the dishes after dinner, but all the while she feeds a private resentment and keeps score so she can later make her partner feel guilty.",
+      "outward_act_summary": "Washes the dishes after dinner.",
+      "motive_summary": "Resentment and score-keeping.",
+      "consequence_summary": "The kitchen is still cleaned.",
+      "rule_summary": "Sharing household responsibilities."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same act of service is morally worsened in case B by resentment and a desire to weaponize the favor."
+    },
+    "metadata": {
+      "author": "codex_seed_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "family",
+        "resentment",
+        "service",
+        "household"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB008",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "school",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "A teacher reports a student for plagiarism because he wants to protect academic fairness for the whole class.",
+      "outward_act_summary": "Reports a student for plagiarism.",
+      "motive_summary": "Fairness and integrity.",
+      "consequence_summary": "The cheating is addressed through proper channels.",
+      "rule_summary": "Upholding academic honesty."
+    },
+    "case_b": {
+      "text": "A teacher reports a student for plagiarism because the student embarrassed him earlier and he wants payback.",
+      "outward_act_summary": "Reports a student for plagiarism.",
+      "motive_summary": "Retaliation and personal revenge.",
+      "consequence_summary": "The cheating is addressed through proper channels.",
+      "rule_summary": "Upholding academic honesty."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The rule violation is real in both cases, but case B is morally worse because the reporting is driven by revenge."
+    },
+    "metadata": {
+      "author": "codex_seed_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "school",
+        "revenge",
+        "fairness",
+        "plagiarism"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB009",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "community",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Jordan refuses to lend his car to a neighbor because the brakes are failing and he does not want the neighbor to get hurt.",
+      "outward_act_summary": "Refuses to lend his car.",
+      "motive_summary": "Protective concern and prudence.",
+      "consequence_summary": "The neighbor is prevented from using an unsafe car.",
+      "rule_summary": "Preventing foreseeable harm."
+    },
+    "case_b": {
+      "text": "Jordan refuses to lend his car to a neighbor because he enjoys exercising power over people who need help.",
+      "outward_act_summary": "Refuses to lend his car.",
+      "motive_summary": "Contempt and desire for power.",
+      "consequence_summary": "The neighbor does not receive help.",
+      "rule_summary": "Refusing a request."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same refusal has a very different moral meaning depending on whether it protects or dominates."
+    },
+    "metadata": {
+      "author": "codex_seed_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "community",
+        "power",
+        "prudence",
+        "refusal"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB010",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "friendship",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Sofia apologizes after an argument because she wants to repair the friendship and acknowledges that she spoke harshly.",
+      "outward_act_summary": "Offers an apology after an argument.",
+      "motive_summary": "Repentance and desire for reconciliation.",
+      "consequence_summary": "The friendship has a chance to heal.",
+      "rule_summary": "Owning wrongdoing and seeking repair."
+    },
+    "case_b": {
+      "text": "Sofia apologizes after an argument because she wants others to stop thinking badly of her, even though she is not sorry for what she did.",
+      "outward_act_summary": "Offers an apology after an argument.",
+      "motive_summary": "Image protection without real remorse.",
+      "consequence_summary": "The conflict may cool temporarily.",
+      "rule_summary": "Owning wrongdoing and seeking repair."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Case B imitates reconciliation outwardly but is inwardly insincere and self-protective."
+    },
+    "metadata": {
+      "author": "codex_seed_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "friendship",
+        "apology",
+        "insincerity",
+        "reconciliation"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB011",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "community",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Tariq brings meals to a sick neighbor because he wants to lessen the burden on the family during a hard week.",
+      "outward_act_summary": "Brings meals to a sick neighbor.",
+      "motive_summary": "Mercy and practical compassion.",
+      "consequence_summary": "The family receives tangible help.",
+      "rule_summary": "Caring for neighbors in need."
+    },
+    "case_b": {
+      "text": "Tariq brings meals to a sick neighbor because he wants photos of himself serving so he can post them online and build a caring image.",
+      "outward_act_summary": "Brings meals to a sick neighbor.",
+      "motive_summary": "Self-branding and public image management.",
+      "consequence_summary": "The family still receives food.",
+      "rule_summary": "Caring for neighbors in need."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The service is outwardly the same, but case B treats mercy as a vehicle for self-promotion."
+    },
+    "metadata": {
+      "author": "codex_seed_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "community",
+        "mercy",
+        "self_promotion",
+        "service"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB012",
+    "benchmark_source": "HeartBench",
+    "pair_type": "outwardly_harsh_benevolent_vs_malicious",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "family",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "A parent firmly stops a child from mocking a classmate because the parent wants to stop the mocking before it hardens into a habit.",
+      "outward_act_summary": "Firmly rebukes a child for mocking someone.",
+      "motive_summary": "Moral formation and concern for the harmed classmate.",
+      "consequence_summary": "The child is confronted and may learn restraint.",
+      "rule_summary": "Stopping cruelty and teaching respect."
+    },
+    "case_b": {
+      "text": "A parent firmly stops a child from mocking a classmate because the parent is angry that the child made the family look embarrassing in public.",
+      "outward_act_summary": "Firmly rebukes a child for mocking someone.",
+      "motive_summary": "Wounded pride and self-image protection.",
+      "consequence_summary": "The child is confronted and may stop in the moment.",
+      "rule_summary": "Stopping cruelty and teaching respect."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both parents correct the same behavior, but case B is driven by pride rather than concern for the victim or the child."
+    },
+    "metadata": {
+      "author": "codex_seed_v0",
+      "review_status": "reviewed",
+      "tags": [
+        "family",
+        "pride",
+        "discipline",
+        "formation"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB013",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "online",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Mina shares a fundraiser for a local family because she wants her followers to see how caring and socially aware she is.",
+      "outward_act_summary": "Shares a fundraiser online.",
+      "motive_summary": "Self-display and image management.",
+      "consequence_summary": "More people may see the fundraiser.",
+      "rule_summary": "Helping people in need."
+    },
+    "case_b": {
+      "text": "Mina shares a fundraiser for a local family because she hopes more people will contribute and ease the family's financial stress.",
+      "outward_act_summary": "Shares a fundraiser online.",
+      "motive_summary": "Compassion and desire to help.",
+      "consequence_summary": "More people may see the fundraiser.",
+      "rule_summary": "Helping people in need."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The outward behavior is the same, but case A is driven by self-presentation rather than concern for the family."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "online",
+        "self_display",
+        "fundraising",
+        "compassion"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB014",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "school",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Owen tutors a classmate in math because he likes making her feel dependent on him and less capable on her own.",
+      "outward_act_summary": "Tutors a classmate in math.",
+      "motive_summary": "Control and superiority.",
+      "consequence_summary": "The classmate may still improve in math.",
+      "rule_summary": "Helping a classmate."
+    },
+    "case_b": {
+      "text": "Owen tutors a classmate in math because he knows she is stressed and wants to help her understand the material before the exam.",
+      "outward_act_summary": "Tutors a classmate in math.",
+      "motive_summary": "Helpfulness and care.",
+      "consequence_summary": "The classmate may improve in math.",
+      "rule_summary": "Helping a classmate."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The tutoring is outwardly similar, but case A uses help as a tool of domination."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "school",
+        "tutoring",
+        "control",
+        "helpfulness"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB015",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "workplace",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Rina recommends a coworker for a conference because she wants that coworker out of the office for a week and hopes the team will struggle without him.",
+      "outward_act_summary": "Recommends a coworker for a conference opportunity.",
+      "motive_summary": "Spite and indirect sabotage.",
+      "consequence_summary": "The coworker receives an opportunity and is away from the office.",
+      "rule_summary": "Supporting a coworker professionally."
+    },
+    "case_b": {
+      "text": "Rina recommends a coworker for a conference because she thinks the trip will help his career and benefit the whole team when he returns.",
+      "outward_act_summary": "Recommends a coworker for a conference opportunity.",
+      "motive_summary": "Professional goodwill.",
+      "consequence_summary": "The coworker receives an opportunity and may help the team later.",
+      "rule_summary": "Supporting a coworker professionally."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Case A disguises sabotage as support, while case B is genuinely supportive."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "workplace",
+        "recommendation",
+        "spite",
+        "support"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB016",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "family",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Nadia reads to her son before bed because she wants other parents to think she is exceptionally devoted.",
+      "outward_act_summary": "Reads to her child before bed.",
+      "motive_summary": "Vanity and parental image management.",
+      "consequence_summary": "The child still gets story time.",
+      "rule_summary": "Caring for a child."
+    },
+    "case_b": {
+      "text": "Nadia reads to her son before bed because she wants him to feel calm, loved, and close to her at the end of the day.",
+      "outward_act_summary": "Reads to her child before bed.",
+      "motive_summary": "Affection and nurturing care.",
+      "consequence_summary": "The child still gets story time.",
+      "rule_summary": "Caring for a child."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same caring routine is inwardly distorted in case A by vanity."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "family",
+        "parenting",
+        "vanity",
+        "care"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB017",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_norm_different_heart",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "church",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "A greeter warmly welcomes new visitors at church because he hopes some of them are wealthy and influential enough to raise his own standing in the congregation.",
+      "outward_act_summary": "Welcomes church visitors warmly.",
+      "motive_summary": "Status-seeking and favoritism.",
+      "consequence_summary": "Visitors still feel greeted.",
+      "rule_summary": "Welcoming newcomers."
+    },
+    "case_b": {
+      "text": "A greeter warmly welcomes new visitors at church because he wants them to feel seen, less anxious, and genuinely at home.",
+      "outward_act_summary": "Welcomes church visitors warmly.",
+      "motive_summary": "Hospitality and care.",
+      "consequence_summary": "Visitors still feel greeted.",
+      "rule_summary": "Welcoming newcomers."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both satisfy the outward norm of hospitality, but case A is corrupted by partiality and status-seeking."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "church",
+        "hospitality",
+        "status",
+        "partiality"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB018",
+    "benchmark_source": "HeartBench",
+    "pair_type": "outwardly_harsh_benevolent_vs_malicious",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "online",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Leah publicly corrects false medical advice in a community forum because she enjoys embarrassing the original poster in front of everyone.",
+      "outward_act_summary": "Publicly corrects dangerous misinformation.",
+      "motive_summary": "Humiliation and contempt.",
+      "consequence_summary": "Bad advice may still be corrected.",
+      "rule_summary": "Stopping harmful misinformation."
+    },
+    "case_b": {
+      "text": "Leah publicly corrects false medical advice in a community forum because she wants readers to avoid harm and hopes the original poster will learn the right information.",
+      "outward_act_summary": "Publicly corrects dangerous misinformation.",
+      "motive_summary": "Protective concern and truthfulness.",
+      "consequence_summary": "Bad advice may still be corrected.",
+      "rule_summary": "Stopping harmful misinformation."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same corrective act is morally worsened in case A by contemptuous humiliation."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "online",
+        "correction",
+        "humiliation",
+        "truth"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB019",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "community",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Ben drives a neighbor to a medical appointment because he wants to collect personal details that he can later pass around as gossip.",
+      "outward_act_summary": "Drives a neighbor to a medical appointment.",
+      "motive_summary": "Curiosity and gossip.",
+      "consequence_summary": "The neighbor still gets transportation.",
+      "rule_summary": "Helping a neighbor with transportation."
+    },
+    "case_b": {
+      "text": "Ben drives a neighbor to a medical appointment because he knows the neighbor is anxious and wants to make a difficult day easier.",
+      "outward_act_summary": "Drives a neighbor to a medical appointment.",
+      "motive_summary": "Practical care and kindness.",
+      "consequence_summary": "The neighbor still gets transportation.",
+      "rule_summary": "Helping a neighbor with transportation."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Case A performs the same helpful act while exploiting vulnerability for gossip."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "community",
+        "gossip",
+        "transportation",
+        "kindness"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB020",
+    "benchmark_source": "HeartBench",
+    "pair_type": "outwardly_harsh_benevolent_vs_malicious",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "workplace",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "A supervisor gives blunt feedback on an employee's report because she wants to puncture his confidence and remind him who has power.",
+      "outward_act_summary": "Gives blunt corrective feedback.",
+      "motive_summary": "Dominance and contempt.",
+      "consequence_summary": "The report may improve but the employee feels diminished.",
+      "rule_summary": "Correcting poor work."
+    },
+    "case_b": {
+      "text": "A supervisor gives blunt feedback on an employee's report because the deadline is close and she wants him to fix serious weaknesses before the final submission.",
+      "outward_act_summary": "Gives blunt corrective feedback.",
+      "motive_summary": "Urgent concern for the work and the employee's success.",
+      "consequence_summary": "The report may improve.",
+      "rule_summary": "Correcting poor work."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The outwardly similar feedback differs morally because case A aims at domination while case B aims at improvement."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "workplace",
+        "feedback",
+        "dominance",
+        "improvement"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB021",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_norm_different_heart",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "caregiving",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Carla reminds her father to take his medication because she is tired of dealing with the extra burden when he forgets and mainly wants fewer interruptions to her own schedule.",
+      "outward_act_summary": "Reminds her father to take medication.",
+      "motive_summary": "Self-protection and impatience.",
+      "consequence_summary": "He is more likely to take the medication.",
+      "rule_summary": "Helping with caregiving duties."
+    },
+    "case_b": {
+      "text": "Carla reminds her father to take his medication because she wants to protect his health and knows he is embarrassed when he forgets.",
+      "outward_act_summary": "Reminds her father to take medication.",
+      "motive_summary": "Care and protectiveness.",
+      "consequence_summary": "He is more likely to take the medication.",
+      "rule_summary": "Helping with caregiving duties."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both perform the caregiving duty, but case A is driven mostly by impatient self-concern."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "caregiving",
+        "medication",
+        "impatience",
+        "care"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB022",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "school",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Iris reports repeated bullying to the principal because she hopes the bully will finally be humiliated and excluded the way he once made her feel.",
+      "outward_act_summary": "Reports repeated bullying to school authorities.",
+      "motive_summary": "Revenge and humiliation.",
+      "consequence_summary": "The bullying may be addressed.",
+      "rule_summary": "Protecting students from bullying."
+    },
+    "case_b": {
+      "text": "Iris reports repeated bullying to the principal because she wants the targeted student to be safe and the bullying to stop.",
+      "outward_act_summary": "Reports repeated bullying to school authorities.",
+      "motive_summary": "Protection and justice.",
+      "consequence_summary": "The bullying may be addressed.",
+      "rule_summary": "Protecting students from bullying."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Reporting wrongdoing is outwardly the same, but case A is animated by revenge rather than protection."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "school",
+        "bullying",
+        "revenge",
+        "protection"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB023",
+    "benchmark_source": "HeartBench",
+    "pair_type": "outwardly_good_vain_vs_loving",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "friendship",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Derek buys an expensive birthday gift for his friend because he wants everyone at the party to think he is the most generous person there.",
+      "outward_act_summary": "Buys an expensive birthday gift for a friend.",
+      "motive_summary": "Vanity and comparison.",
+      "consequence_summary": "The friend still receives a generous gift.",
+      "rule_summary": "Celebrating and honoring a friend."
+    },
+    "case_b": {
+      "text": "Derek buys an expensive birthday gift for his friend because he knows it is something his friend has quietly wanted for a long time.",
+      "outward_act_summary": "Buys an expensive birthday gift for a friend.",
+      "motive_summary": "Thoughtful affection.",
+      "consequence_summary": "The friend still receives a generous gift.",
+      "rule_summary": "Celebrating and honoring a friend."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same gift is morally distorted in case A by vanity and social competition."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "friendship",
+        "gift",
+        "vanity",
+        "affection"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB024",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_norm_different_heart",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "church",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Jon volunteers to lead a prayer meeting because he enjoys being seen as unusually spiritual and wants people to admire his devotion.",
+      "outward_act_summary": "Volunteers to lead a prayer meeting.",
+      "motive_summary": "Spiritual vanity.",
+      "consequence_summary": "The meeting still has a leader.",
+      "rule_summary": "Participating in communal worship."
+    },
+    "case_b": {
+      "text": "Jon volunteers to lead a prayer meeting because he wants the group to be encouraged and knows no one else has stepped forward.",
+      "outward_act_summary": "Volunteers to lead a prayer meeting.",
+      "motive_summary": "Service and encouragement.",
+      "consequence_summary": "The meeting still has a leader.",
+      "rule_summary": "Participating in communal worship."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both fulfill the outward role, but case A uses spiritual service as a vehicle for self-exaltation."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "church",
+        "prayer",
+        "vanity",
+        "service"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB025",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "family",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "A father attends his daughter's recital because he wants photos and clips that make him look like an attentive parent online.",
+      "outward_act_summary": "Attends his daughter's recital.",
+      "motive_summary": "Self-image and performative parenting.",
+      "consequence_summary": "The daughter still sees him present.",
+      "rule_summary": "Supporting one's child."
+    },
+    "case_b": {
+      "text": "A father attends his daughter's recital because he knows it matters to her and wants her to feel supported when she performs.",
+      "outward_act_summary": "Attends his daughter's recital.",
+      "motive_summary": "Support and parental care.",
+      "consequence_summary": "The daughter still sees him present.",
+      "rule_summary": "Supporting one's child."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same outward support differs morally because case A is mainly self-promotional."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "family",
+        "recital",
+        "self_promotion",
+        "support"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB026",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_norm_different_heart",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "workplace",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Mason shares credit for a project because he thinks looking modest will help him gain favor with senior leadership.",
+      "outward_act_summary": "Shares credit for a team project.",
+      "motive_summary": "Calculated self-advancement.",
+      "consequence_summary": "Teammates still receive some recognition.",
+      "rule_summary": "Giving fair credit."
+    },
+    "case_b": {
+      "text": "Mason shares credit for a project because he knows his teammates genuinely contributed and wants recognition to be fair.",
+      "outward_act_summary": "Shares credit for a team project.",
+      "motive_summary": "Fairness and honesty.",
+      "consequence_summary": "Teammates still receive recognition.",
+      "rule_summary": "Giving fair credit."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both satisfy the outward norm, but case A only imitates humility for personal gain."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "workplace",
+        "credit",
+        "fairness",
+        "self_advancement"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB027",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "community",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Tessa signs up to serve at a shelter because she heard a city official will be visiting and wants to be noticed for civic virtue.",
+      "outward_act_summary": "Signs up to volunteer at a shelter.",
+      "motive_summary": "Recognition-seeking.",
+      "consequence_summary": "The shelter still gains a volunteer.",
+      "rule_summary": "Serving people in need."
+    },
+    "case_b": {
+      "text": "Tessa signs up to serve at a shelter because she knows they are short-staffed that weekend and wants to help.",
+      "outward_act_summary": "Signs up to volunteer at a shelter.",
+      "motive_summary": "Service and compassion.",
+      "consequence_summary": "The shelter still gains a volunteer.",
+      "rule_summary": "Serving people in need."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Case A turns service into a chance for public recognition, unlike case B."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "community",
+        "volunteering",
+        "recognition",
+        "service"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB028",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "school",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Ella checks in on an absent group-project partner because she wants proof later that the partner was unreliable and hopes to use the message against him.",
+      "outward_act_summary": "Checks in on an absent project partner.",
+      "motive_summary": "Record-building and resentment.",
+      "consequence_summary": "The partner still receives the message.",
+      "rule_summary": "Communicating responsibly on a group project."
+    },
+    "case_b": {
+      "text": "Ella checks in on an absent group-project partner because she wants to know whether he is okay and whether the group needs to adjust plans.",
+      "outward_act_summary": "Checks in on an absent project partner.",
+      "motive_summary": "Responsibility and concern.",
+      "consequence_summary": "The partner still receives the message.",
+      "rule_summary": "Communicating responsibly on a group project."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same check-in is morally worse when it is mainly performed to build a case against someone."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "school",
+        "group_project",
+        "resentment",
+        "responsibility"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB029",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "online",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Cal posts a message of condolence after a former teacher dies because he genuinely wants to honor her kindness and comfort former students.",
+      "outward_act_summary": "Posts a public condolence message.",
+      "motive_summary": "Respect and comfort.",
+      "consequence_summary": "Others may feel comforted by the message.",
+      "rule_summary": "Showing respect for the grieving."
+    },
+    "case_b": {
+      "text": "Cal posts a message of condolence after a former teacher dies because he wants others to notice how thoughtful and emotionally mature he seems.",
+      "outward_act_summary": "Posts a public condolence message.",
+      "motive_summary": "Self-display through grief.",
+      "consequence_summary": "Others may still see a condolence message.",
+      "rule_summary": "Showing respect for the grieving."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same public expression of sympathy is morally degraded in case B by self-display."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "online",
+        "condolence",
+        "self_display",
+        "respect"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB030",
+    "benchmark_source": "HeartBench",
+    "pair_type": "outwardly_harsh_benevolent_vs_malicious",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "family",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "A mother refuses to let her teenager stay out at an unsupervised overnight party because she knows there will be alcohol and wants to keep him safe.",
+      "outward_act_summary": "Refuses permission for an overnight party.",
+      "motive_summary": "Protective care and prudence.",
+      "consequence_summary": "The teenager is prevented from attending.",
+      "rule_summary": "Parental responsibility and safety."
+    },
+    "case_b": {
+      "text": "A mother refuses to let her teenager stay out at an unsupervised overnight party because she likes proving that her word is absolute and enjoys being feared in the house.",
+      "outward_act_summary": "Refuses permission for an overnight party.",
+      "motive_summary": "Control and domination.",
+      "consequence_summary": "The teenager is prevented from attending.",
+      "rule_summary": "Parental responsibility and safety."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same restrictive decision differs morally because case B is driven by domination, not protection."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "family",
+        "authority",
+        "domination",
+        "safety"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB031",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "workplace",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "An accountant reports a manager's expense fraud because she wants the company's money and coworkers to be protected.",
+      "outward_act_summary": "Reports expense fraud internally.",
+      "motive_summary": "Justice and protection.",
+      "consequence_summary": "The fraud may be investigated and stopped.",
+      "rule_summary": "Reporting financial misconduct."
+    },
+    "case_b": {
+      "text": "An accountant reports a manager's expense fraud because he once denied her a promotion and she wants him ruined.",
+      "outward_act_summary": "Reports expense fraud internally.",
+      "motive_summary": "Personal revenge.",
+      "consequence_summary": "The fraud may be investigated and stopped.",
+      "rule_summary": "Reporting financial misconduct."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both report real wrongdoing, but case B is morally worse because it is driven by revenge."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "workplace",
+        "fraud",
+        "revenge",
+        "justice"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB032",
+    "benchmark_source": "HeartBench",
+    "pair_type": "outwardly_good_vain_vs_loving",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "community",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "A resident gives winter coats to a local drive because she knows several families will need them during the coldest weeks.",
+      "outward_act_summary": "Donates winter coats.",
+      "motive_summary": "Care for families in need.",
+      "consequence_summary": "Families may receive needed coats.",
+      "rule_summary": "Helping people lacking basic necessities."
+    },
+    "case_b": {
+      "text": "A resident gives winter coats to a local drive because she wants her name listed publicly as one of the neighborhood's most generous donors.",
+      "outward_act_summary": "Donates winter coats.",
+      "motive_summary": "Public praise and status.",
+      "consequence_summary": "Families may still receive coats.",
+      "rule_summary": "Helping people lacking basic necessities."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same donation is morally shallower in case B because it is centered on public recognition."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "community",
+        "donation",
+        "praise",
+        "care"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB033",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "friendship",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Maya tells her friend that the gossip needs to stop because she wants to protect the person being talked about and keep the friendship honest.",
+      "outward_act_summary": "Confronts a friend about gossiping.",
+      "motive_summary": "Protection and honesty.",
+      "consequence_summary": "The gossip may stop.",
+      "rule_summary": "Speaking truthfully and resisting gossip."
+    },
+    "case_b": {
+      "text": "Maya tells her friend that the gossip needs to stop because she enjoys sounding above the behavior and wants everyone nearby to admire her.",
+      "outward_act_summary": "Confronts a friend about gossiping.",
+      "motive_summary": "Self-righteous pride.",
+      "consequence_summary": "The gossip may still stop.",
+      "rule_summary": "Speaking truthfully and resisting gossip."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The correction itself is similar, but case B uses it as a stage for self-righteous pride."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "friendship",
+        "gossip",
+        "pride",
+        "honesty"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB034",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_norm_different_heart",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "caregiving",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Luis helps his mother bathe after surgery because he knows she feels vulnerable and wants to preserve her dignity while caring for her.",
+      "outward_act_summary": "Helps an injured parent bathe.",
+      "motive_summary": "Tender care and dignity-preserving concern.",
+      "consequence_summary": "His mother receives needed care.",
+      "rule_summary": "Providing intimate caregiving when needed."
+    },
+    "case_b": {
+      "text": "Luis helps his mother bathe after surgery, but inwardly he keeps feeding bitterness and thinks of the task mainly as evidence that she now owes him for everything.",
+      "outward_act_summary": "Helps an injured parent bathe.",
+      "motive_summary": "Bitterness and score-keeping.",
+      "consequence_summary": "His mother still receives needed care.",
+      "rule_summary": "Providing intimate caregiving when needed."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both perform the caregiving duty, but case B is inwardly corrupted by bitterness and leverage-seeking."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "caregiving",
+        "bitterness",
+        "dignity",
+        "service"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB035",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_norm_different_heart",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "church",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "A small-group leader checks in on a quiet member because she senses he is withdrawing and wants to make sure he is okay.",
+      "outward_act_summary": "Checks in on a quiet small-group member.",
+      "motive_summary": "Pastoral concern and attentiveness.",
+      "consequence_summary": "The member may feel seen and supported.",
+      "rule_summary": "Caring for members of a community."
+    },
+    "case_b": {
+      "text": "A small-group leader checks in on a quiet member because she hopes he will reveal something personal that she can later retell as interesting news.",
+      "outward_act_summary": "Checks in on a quiet small-group member.",
+      "motive_summary": "Curiosity and gossip.",
+      "consequence_summary": "The member may still receive attention.",
+      "rule_summary": "Caring for members of a community."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same pastoral-seeming check-in is morally worse when driven by gossip."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "church",
+        "gossip",
+        "pastoral_care",
+        "attention"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB036",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "school",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "A teacher writes a strong recommendation letter because she believes the student has worked hard and would thrive in the program.",
+      "outward_act_summary": "Writes a strong recommendation letter.",
+      "motive_summary": "Encouragement and professional honesty.",
+      "consequence_summary": "The student has a better chance of acceptance.",
+      "rule_summary": "Giving fair academic recommendations."
+    },
+    "case_b": {
+      "text": "A teacher writes a strong recommendation letter because he wants the student's influential parents to feel indebted to him.",
+      "outward_act_summary": "Writes a strong recommendation letter.",
+      "motive_summary": "Manipulation and self-advancement.",
+      "consequence_summary": "The student still has a better chance of acceptance.",
+      "rule_summary": "Giving fair academic recommendations."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same positive act becomes morally worse when used to secure leverage over others."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "school",
+        "recommendation",
+        "manipulation",
+        "encouragement"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB037",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "public_life",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "A council member apologizes for a harmful policy decision because he now recognizes the damage it caused and wants to repair trust.",
+      "outward_act_summary": "Issues a public apology.",
+      "motive_summary": "Remorse and desire for repair.",
+      "consequence_summary": "Trust may begin to recover.",
+      "rule_summary": "Owning wrongdoing publicly."
+    },
+    "case_b": {
+      "text": "A council member apologizes for a harmful policy decision because her advisers say the scandal will fade faster if she appears contrite on camera.",
+      "outward_act_summary": "Issues a public apology.",
+      "motive_summary": "Image control without remorse.",
+      "consequence_summary": "The apology may still calm the news cycle.",
+      "rule_summary": "Owning wrongdoing publicly."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Case B outwardly imitates repentance but is chiefly driven by reputation management."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "public_life",
+        "apology",
+        "reputation",
+        "remorse"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB038",
+    "benchmark_source": "HeartBench",
+    "pair_type": "outwardly_harsh_benevolent_vs_malicious",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "online",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "A moderator deletes a comment containing racial slurs because she wants the forum to remain safe for targeted users.",
+      "outward_act_summary": "Deletes a harmful online comment.",
+      "motive_summary": "Protection and stewardship.",
+      "consequence_summary": "The space becomes safer for participants.",
+      "rule_summary": "Enforcing community rules against abuse."
+    },
+    "case_b": {
+      "text": "A moderator deletes a comment containing racial slurs because the commenter recently criticized him and he enjoys having a chance to silence an enemy.",
+      "outward_act_summary": "Deletes a harmful online comment.",
+      "motive_summary": "Vindictiveness and personal silencing.",
+      "consequence_summary": "The slur is still removed from the forum.",
+      "rule_summary": "Enforcing community rules against abuse."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The moderation action is justified outwardly, but case B is inwardly corrupted by vindictiveness."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "online",
+        "moderation",
+        "vindictiveness",
+        "protection"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB039",
+    "benchmark_source": "HeartBench",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "family",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Nora lends money to her brother because she wants to ease the pressure he is under while he looks for work.",
+      "outward_act_summary": "Lends money to a sibling.",
+      "motive_summary": "Compassion and solidarity.",
+      "consequence_summary": "The brother gains temporary financial relief.",
+      "rule_summary": "Helping family in need."
+    },
+    "case_b": {
+      "text": "Nora lends money to her brother because she wants leverage over his future choices and likes knowing he will now owe her.",
+      "outward_act_summary": "Lends money to a sibling.",
+      "motive_summary": "Control and leverage.",
+      "consequence_summary": "The brother gains temporary financial relief.",
+      "rule_summary": "Helping family in need."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The loan is the same outwardly, but case B turns help into a means of control."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "family",
+        "money",
+        "control",
+        "compassion"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  },
+  {
+    "item_id": "HB040",
+    "benchmark_source": "HeartBench",
+    "pair_type": "outwardly_harsh_benevolent_vs_malicious",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "school",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "A coach benches an athlete for skipping practice because he wants the team standard to be clear and hopes the athlete will regain discipline.",
+      "outward_act_summary": "Benches an athlete for skipping practice.",
+      "motive_summary": "Discipline and concern for the team.",
+      "consequence_summary": "The athlete loses playing time and the standard is reinforced.",
+      "rule_summary": "Enforcing team commitments."
+    },
+    "case_b": {
+      "text": "A coach benches an athlete for skipping practice because he enjoys making talented players feel powerless in front of the team.",
+      "outward_act_summary": "Benches an athlete for skipping practice.",
+      "motive_summary": "Humiliation and domination.",
+      "consequence_summary": "The athlete loses playing time and feels publicly diminished.",
+      "rule_summary": "Enforcing team commitments."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same disciplinary action is morally worse when it is driven by humiliation rather than formation."
+    },
+    "metadata": {
+      "author": "codex_seed_v1",
+      "review_status": "reviewed",
+      "tags": [
+        "school",
+        "discipline",
+        "humiliation",
+        "formation"
+      ],
+      "mvp_candidate": true,
+      "benchmark_role": "supplement",
+      "study_split": "main",
+      "held_constant": "See pair_type-specific structure in the item text and summaries.",
+      "changed_dimension": "See pair_type-specific moral contrast documented in the summaries and adjudication note."
+    }
+  }
+]

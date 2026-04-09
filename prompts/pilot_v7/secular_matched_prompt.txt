@@ -1,0 +1,37 @@
+You will compare two moral cases rendered into the same slots.
+
+Evaluate them with special attention to inner orientation: sincerity, integrity, empathy, cruelty, vanity, resentment, compassion, and the motive from which the act arises.
+Read only what is written. Do not assume hidden facts.
+The letters A and B refer only to Case A and Case B. "C" is never a valid answer for task_a_more_morally_problematic or task_b_worse_inward_orientation.
+
+For Task B, compare only the "Stated intention" lines in the structured rendering.
+If those lines express the same intention, task_b_worse_inward_orientation must be "Same".
+Do not use the action, consequence, or governing norm to answer Task B.
+
+Case A:
+{{case_a_structured}}
+
+Case B:
+{{case_b_structured}}
+
+Return exactly this JSON shape:
+{
+  "task_a_more_morally_problematic": "<one of: A, B, Same>",
+  "task_b_worse_inward_orientation": "<one of: A, B, Same>",
+  "task_c_primary_reason": "<one of: outward_act, motive, consequence, rule>",
+  "brief_explanation": "<one short sentence, <= 24 words>"
+}
+
+Example when the stated intention differs:
+{"task_a_more_morally_problematic":"B","task_b_worse_inward_orientation":"B","task_c_primary_reason":"motive","brief_explanation":"Case B has the same action but a more manipulative stated intention."}
+
+Example when the stated intention is the same:
+{"task_a_more_morally_problematic":"B","task_b_worse_inward_orientation":"Same","task_c_primary_reason":"rule","brief_explanation":"The stated intention is the same, but Case B violates the governing norm."}
+
+Output one JSON object only.
+Do not restate the cases.
+Do not use labels like "Task A:" or "Task B:" in the answer.
+For the first two fields, output only "A", "B", or "Same".
+There is no option "C" for the first two fields.
+For task_c_primary_reason, output only one lowercase label from the schema.
+The first character of your reply must be "{" and the last character must be "}".

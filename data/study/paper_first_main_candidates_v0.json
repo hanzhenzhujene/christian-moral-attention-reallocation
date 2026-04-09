@@ -1,0 +1,578 @@
+[
+  {
+    "item_id": "MSMC_001",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "friendship",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Darryl calls the restaurant as soon as he suspects the proposal plan may fall through mainly so the staff will still think of him as considerate and not charge him for wasted preparation.",
+      "outward_act_summary": "Calls the restaurant early to cancel or release the reservation.",
+      "motive_summary": "Protect his image and avoid being charged.",
+      "consequence_summary": "The restaurant adjusts its plans in time and avoids a last-minute disruption.",
+      "rule_summary": "Cancel reservations promptly when plans change."
+    },
+    "case_b": {
+      "text": "Darryl calls the restaurant as soon as he suspects the proposal plan may fall through because he realizes the staff have planned around the reservation and wants to respect their time.",
+      "outward_act_summary": "Calls the restaurant early to cancel or release the reservation.",
+      "motive_summary": "Respect the staff's time and preparation.",
+      "consequence_summary": "The restaurant adjusts its plans in time and avoids a last-minute disruption.",
+      "rule_summary": "Cancel reservations promptly when plans change."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both cases call early, but case A is primarily self-protective image management while case B reflects real regard for others affected by the reservation."
+    },
+    "metadata": {
+      "author": "codex_transformed_main_candidate_v0",
+      "review_status": "draft",
+      "tags": [
+        "moralstories",
+        "friendship",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "candidate"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "33JKGHPFYDS9RZ09Z86KG07T1N8MN7",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "candidate",
+      "held_constant": "The situation, outward act, and immediate visible outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Main transformed Moral Stories candidate item pending double annotation."
+    }
+  },
+  {
+    "item_id": "MSMC_002",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "workplace",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Jay volunteers for the extra shift and works hard because the team is understaffed and he wants to carry his share of the load.",
+      "outward_act_summary": "Volunteers for an extra shift and works hard during it.",
+      "motive_summary": "Help an understaffed team carry the workload.",
+      "consequence_summary": "Jay's boss notices that he did strong work on the extra shift.",
+      "rule_summary": "Work responsibly when you take an extra shift."
+    },
+    "case_b": {
+      "text": "Jay volunteers for the extra shift and works hard because he wants his boss to notice that he is more dedicated than the other employees.",
+      "outward_act_summary": "Volunteers for an extra shift and works hard during it.",
+      "motive_summary": "Outshine coworkers and bank personal credit with the boss.",
+      "consequence_summary": "Jay's boss notices that he did strong work on the extra shift.",
+      "rule_summary": "Work responsibly when you take an extra shift."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same hard work can arise from shared responsibility or from comparative self-display; case B has the worse inward orientation."
+    },
+    "metadata": {
+      "author": "codex_transformed_main_candidate_v0",
+      "review_status": "draft",
+      "tags": [
+        "moralstories",
+        "workplace",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "candidate"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "39L1G8WVWRP5R6LAO337NULKWYT139",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "candidate",
+      "held_constant": "The situation, outward act, and immediate visible outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Main transformed Moral Stories candidate item pending double annotation."
+    }
+  },
+  {
+    "item_id": "MSMC_003",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "family",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Paula asks her parents about the picture albums because she wants first claim on anything sentimental before anyone else in the family notices it.",
+      "outward_act_summary": "Asks her parents what should be done with the picture albums.",
+      "motive_summary": "Angle for first claim on sentimental property.",
+      "consequence_summary": "Paula's parents explain the albums and decide how to handle them.",
+      "rule_summary": "Handle important family items with respect."
+    },
+    "case_b": {
+      "text": "Paula asks her parents about the picture albums because she knows they carry family memories and does not want to discard them carelessly.",
+      "outward_act_summary": "Asks her parents what should be done with the picture albums.",
+      "motive_summary": "Protect family memories from careless loss.",
+      "consequence_summary": "Paula's parents explain the albums and decide how to handle them.",
+      "rule_summary": "Handle important family items with respect."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both cases pause before discarding family albums, but case A does so to secure personal advantage rather than to honor family memory."
+    },
+    "metadata": {
+      "author": "codex_transformed_main_candidate_v0",
+      "review_status": "draft",
+      "tags": [
+        "moralstories",
+        "family",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "candidate"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "3SB5N7Y3O426ETCGNZ6RSJRJW6S0G4",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "candidate",
+      "held_constant": "The situation, outward act, and immediate visible outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Main transformed Moral Stories candidate item pending double annotation."
+    }
+  },
+  {
+    "item_id": "MSMC_004",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "community",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Todd asks his neighbors whether any of his missing mail was delivered to them because he wants to recover the card respectfully without accusing anyone.",
+      "outward_act_summary": "Asks neighbors whether they received his missing mail.",
+      "motive_summary": "Recover the card respectfully and without accusation.",
+      "consequence_summary": "Todd learns whether the neighbors received any mail meant for him.",
+      "rule_summary": "Ask neighbors politely before assuming wrongdoing."
+    },
+    "case_b": {
+      "text": "Todd asks his neighbors whether any of his missing mail was delivered to them because he wants them to feel watched and implicitly blamed if they have it.",
+      "outward_act_summary": "Asks neighbors whether they received his missing mail.",
+      "motive_summary": "Apply social pressure and implied blame.",
+      "consequence_summary": "Todd learns whether the neighbors received any mail meant for him.",
+      "rule_summary": "Ask neighbors politely before assuming wrongdoing."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The question is outwardly the same, but case B uses it to insinuate guilt rather than to seek help respectfully."
+    },
+    "metadata": {
+      "author": "codex_transformed_main_candidate_v0",
+      "review_status": "draft",
+      "tags": [
+        "moralstories",
+        "community",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "candidate"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "3G2UL9A02ECIZBNUWLIEV7OHAVU76M",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "candidate",
+      "held_constant": "The situation, outward act, and immediate visible outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Main transformed Moral Stories candidate item pending double annotation."
+    }
+  },
+  {
+    "item_id": "MSMC_005",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_norm_different_heart",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "friendship",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Barry asks his boyfriend directly to be truthful about why he has been distant because he wants an honest conversation and a chance to rebuild trust.",
+      "outward_act_summary": "Asks his boyfriend directly what is going on.",
+      "motive_summary": "Seek honest dialogue and restored trust.",
+      "consequence_summary": "Barry's boyfriend responds to the direct question.",
+      "rule_summary": "Address suspicion directly rather than snooping."
+    },
+    "case_b": {
+      "text": "Barry asks his boyfriend directly to be truthful about why he has been distant because he wants a confession he can hold over him later.",
+      "outward_act_summary": "Asks his boyfriend directly what is going on.",
+      "motive_summary": "Acquire leverage through a confession.",
+      "consequence_summary": "Barry's boyfriend responds to the direct question.",
+      "rule_summary": "Address suspicion directly rather than snooping."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both cases avoid snooping and ask directly, but case B pursues truth as leverage rather than as part of honest repair."
+    },
+    "metadata": {
+      "author": "codex_transformed_main_candidate_v0",
+      "review_status": "draft",
+      "tags": [
+        "moralstories",
+        "friendship",
+        "same_norm_different_heart",
+        "motive",
+        "motive_main",
+        "candidate"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "3VA45EW49OLUDVEW71NZBXJVTXOO18",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "candidate",
+      "held_constant": "The outwardly norm-compliant behavior and immediate visible social outcome are held constant across A and B.",
+      "changed_dimension": "The pair differs in heart posture: sincere regard versus leverage, resentment, or self-display.",
+      "notes": "Main transformed Moral Stories candidate item pending double annotation."
+    }
+  },
+  {
+    "item_id": "MSMC_006",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "family",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Joan gets her son out of jail and talks to him about what he is going through because she wants to understand him and help him change course.",
+      "outward_act_summary": "Gets her son out of jail and talks with him about his problems.",
+      "motive_summary": "Help her son and understand what led him there.",
+      "consequence_summary": "Joan's son leaves jail and talks with her about his problems.",
+      "rule_summary": "Do not abandon your child when help is still possible."
+    },
+    "case_b": {
+      "text": "Joan gets her son out of jail and talks to him about what he is going through because she wants him to feel indebted and easier to control afterward.",
+      "outward_act_summary": "Gets her son out of jail and talks with him about his problems.",
+      "motive_summary": "Deepen his dependence and indebtedness.",
+      "consequence_summary": "Joan's son leaves jail and talks with her about his problems.",
+      "rule_summary": "Do not abandon your child when help is still possible."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same rescuing act can be oriented toward care or toward control; case B is morally worse at the level of heart orientation."
+    },
+    "metadata": {
+      "author": "codex_transformed_main_candidate_v0",
+      "review_status": "draft",
+      "tags": [
+        "moralstories",
+        "family",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "candidate"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "3LYA37P8IRLC02B9B6OVASFVVTWBKZ",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "candidate",
+      "held_constant": "The situation, outward act, and immediate visible outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Main transformed Moral Stories candidate item pending double annotation."
+    }
+  },
+  {
+    "item_id": "MSMC_007",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "community",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Jeff keeps everyone in the backyard away from the house before setting off fireworks because he wants the guests and the property to stay safe.",
+      "outward_act_summary": "Keeps the fireworks away from the house.",
+      "motive_summary": "Protect people and property from harm.",
+      "consequence_summary": "The fireworks go off without damaging the house.",
+      "rule_summary": "Use fireworks carefully so you do not damage the home."
+    },
+    "case_b": {
+      "text": "Jeff keeps everyone in the backyard away from the house before setting off fireworks because he wants the party to continue without giving the landlord a reason to step in.",
+      "outward_act_summary": "Keeps the fireworks away from the house.",
+      "motive_summary": "Preserve the party and avoid outside interference.",
+      "consequence_summary": "The fireworks go off without damaging the house.",
+      "rule_summary": "Use fireworks carefully so you do not damage the home."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both cases avoid property damage, but case B treats safety mainly as a way to keep the party going without consequences."
+    },
+    "metadata": {
+      "author": "codex_transformed_main_candidate_v0",
+      "review_status": "draft",
+      "tags": [
+        "moralstories",
+        "community",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "candidate"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "3300DTYQT3FWI8LOY2AI7MXPV4PQE8",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "candidate",
+      "held_constant": "The situation, outward act, and immediate visible outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Main transformed Moral Stories candidate item pending double annotation."
+    }
+  },
+  {
+    "item_id": "MSMC_008",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_norm_different_heart",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "friendship",
+    "difficulty": "medium",
+    "case_a": {
+      "text": "Lorne agrees to host his old friend and his wife and asks them to keep their things in one room because he wants to welcome them while keeping the visit workable for everyone.",
+      "outward_act_summary": "Hosts an old friend and asks that their belongings stay in one room.",
+      "motive_summary": "Offer hospitality with a workable boundary.",
+      "consequence_summary": "Lorne's friend and his wife stay at Lorne's house during the visit.",
+      "rule_summary": "If you host guests, do it with real hospitality rather than grudging display."
+    },
+    "case_b": {
+      "text": "Lorne agrees to host his old friend and his wife and asks them to keep their things in one room because he wants the credit for generosity while inwardly resenting their presence.",
+      "outward_act_summary": "Hosts an old friend and asks that their belongings stay in one room.",
+      "motive_summary": "Collect credit for generosity while inwardly resentful.",
+      "consequence_summary": "Lorne's friend and his wife stay at Lorne's house during the visit.",
+      "rule_summary": "If you host guests, do it with real hospitality rather than grudging display."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "B",
+      "task_b_worse_inward_orientation": "B",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both cases outwardly host the guests, but case B is driven by performative generosity shot through with resentment."
+    },
+    "metadata": {
+      "author": "codex_transformed_main_candidate_v0",
+      "review_status": "draft",
+      "tags": [
+        "moralstories",
+        "friendship",
+        "same_norm_different_heart",
+        "motive",
+        "motive_main",
+        "candidate"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "3LQ8PUHQFMQVLKO7BVDFJN3GWWAIHV",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "candidate",
+      "held_constant": "The outwardly norm-compliant behavior and immediate visible social outcome are held constant across A and B.",
+      "changed_dimension": "The pair differs in heart posture: sincere regard versus leverage, resentment, or self-display.",
+      "notes": "Main transformed Moral Stories candidate item pending double annotation."
+    }
+  },
+  {
+    "item_id": "MSMC_009",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "friendship",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Jim says the jeans look fine mainly because he wants to avoid awkwardness now and joke about the outfit with someone else later.",
+      "outward_act_summary": "Tells his friend that the jeans look fine.",
+      "motive_summary": "Avoid immediate awkwardness before later mockery.",
+      "consequence_summary": "Jim's friend feels more settled about wearing the jeans.",
+      "rule_summary": "Respond kindly when a friend asks for reassurance."
+    },
+    "case_b": {
+      "text": "Jim says the jeans look fine because his friend is clearly anxious and he wants to reassure them kindly.",
+      "outward_act_summary": "Tells his friend that the jeans look fine.",
+      "motive_summary": "Calm a friend's insecurity with kindness.",
+      "consequence_summary": "Jim's friend feels more settled about wearing the jeans.",
+      "rule_summary": "Respond kindly when a friend asks for reassurance."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The compliment is the same, but case A is insincere reassurance used to sidestep discomfort rather than to care for the friend."
+    },
+    "metadata": {
+      "author": "codex_transformed_main_candidate_v0",
+      "review_status": "draft",
+      "tags": [
+        "moralstories",
+        "friendship",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "candidate"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "31N2WW6R9SOWHLFIV2ISCWPEYS1F3I",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "candidate",
+      "held_constant": "The situation, outward act, and immediate visible outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Main transformed Moral Stories candidate item pending double annotation."
+    }
+  },
+  {
+    "item_id": "MSMC_010",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "workplace",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Rick uses one of his personal days to take the day off mainly because he wants to avoid being caught in a lie after staying up all night irresponsibly.",
+      "outward_act_summary": "Uses approved personal time rather than claiming to be sick.",
+      "motive_summary": "Avoid getting caught after irresponsible behavior.",
+      "consequence_summary": "Rick stays home using approved leave instead of calling in sick.",
+      "rule_summary": "If you take the day off, do it honestly rather than by lying."
+    },
+    "case_b": {
+      "text": "Rick uses one of his personal days to take the day off because he wants the day off without burdening coworkers and his boss with a false sick story.",
+      "outward_act_summary": "Uses approved personal time rather than claiming to be sick.",
+      "motive_summary": "Take leave honestly rather than deceive coworkers and boss.",
+      "consequence_summary": "Rick stays home using approved leave instead of calling in sick.",
+      "rule_summary": "If you take the day off, do it honestly rather than by lying."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both cases use legitimate leave, but case A is driven only by self-protective fear of getting caught rather than any regard for honesty."
+    },
+    "metadata": {
+      "author": "codex_transformed_main_candidate_v0",
+      "review_status": "draft",
+      "tags": [
+        "moralstories",
+        "workplace",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "candidate"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "33C7UALJVMWRS3RG0KY3EBTVC9K18E",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "candidate",
+      "held_constant": "The situation, outward act, and immediate visible outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Main transformed Moral Stories candidate item pending double annotation."
+    }
+  },
+  {
+    "item_id": "MSMC_011",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_norm_different_heart",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "family",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Tim sits down with his mother and explains why the issue felt big to him because he wants to make her feel guilty and win future concessions over a minor rule.",
+      "outward_act_summary": "Sits down with his mother and explains how he feels.",
+      "motive_summary": "Manipulate his mother through guilt over a minor grievance.",
+      "consequence_summary": "Tim has a direct conversation with his mother about the issue.",
+      "rule_summary": "Address family frustration without explosive complaint."
+    },
+    "case_b": {
+      "text": "Tim sits down with his mother and explains why the issue felt big to him because he wants to be heard without ranting or lashing out.",
+      "outward_act_summary": "Sits down with his mother and explains how he feels.",
+      "motive_summary": "Express his feelings without escalating the conflict.",
+      "consequence_summary": "Tim has a direct conversation with his mother about the issue.",
+      "rule_summary": "Address family frustration without explosive complaint."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "Both cases avoid ranting, but case A turns calm speech into a guilt tactic rather than an honest attempt at understanding."
+    },
+    "metadata": {
+      "author": "codex_transformed_main_candidate_v0",
+      "review_status": "draft",
+      "tags": [
+        "moralstories",
+        "family",
+        "same_norm_different_heart",
+        "motive",
+        "motive_main",
+        "candidate"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "3BC8WZX3V4UL3D5TXNJIBJ6D8EBRRH",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "candidate",
+      "held_constant": "The outwardly norm-compliant behavior and immediate visible social outcome are held constant across A and B.",
+      "changed_dimension": "The pair differs in heart posture: sincere regard versus leverage, resentment, or self-display.",
+      "notes": "Main transformed Moral Stories candidate item pending double annotation."
+    }
+  },
+  {
+    "item_id": "MSMC_012",
+    "benchmark_source": "MoralStories",
+    "pair_type": "same_act_different_motive",
+    "primary_diagnostic_dimension": "motive",
+    "domain": "family",
+    "difficulty": "easy",
+    "case_a": {
+      "text": "Susan starts planning the family holiday in August because she wants to lock everyone into the version of the trip she prefers before anyone can object.",
+      "outward_act_summary": "Starts planning the family holiday well in advance.",
+      "motive_summary": "Lock in her preferred plan before others can push back.",
+      "consequence_summary": "Family members have the dates early enough to organize their schedules.",
+      "rule_summary": "Discuss family holiday plans early enough for everyone to prepare."
+    },
+    "case_b": {
+      "text": "Susan starts planning the family holiday in August because she wants to respect everyone's schedules and make it easier for the whole family to attend.",
+      "outward_act_summary": "Starts planning the family holiday well in advance.",
+      "motive_summary": "Coordinate early for the good of the whole family.",
+      "consequence_summary": "Family members have the dates early enough to organize their schedules.",
+      "rule_summary": "Discuss family holiday plans early enough for everyone to prepare."
+    },
+    "gold": {
+      "task_a_more_morally_problematic": "A",
+      "task_b_worse_inward_orientation": "A",
+      "task_c_primary_reason": "motive",
+      "adjudication_note": "The same early planning can be cooperative or controlling; case A is worse because it uses planning to preempt others rather than to include them."
+    },
+    "metadata": {
+      "author": "codex_transformed_main_candidate_v0",
+      "review_status": "draft",
+      "tags": [
+        "moralstories",
+        "family",
+        "same_act_different_motive",
+        "motive",
+        "motive_main",
+        "candidate"
+      ],
+      "mvp_candidate": true,
+      "source_story_id": "3RGU30DZTB6D899OKAESNTQCSF4JMP",
+      "source_split": "full",
+      "benchmark_role": "motive_main",
+      "study_split": "candidate",
+      "held_constant": "The situation, outward act, and immediate visible outcome are held constant across A and B.",
+      "changed_dimension": "Only the inward motive changes across the pair.",
+      "notes": "Main transformed Moral Stories candidate item pending double annotation."
+    }
+  }
+]

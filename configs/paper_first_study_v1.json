@@ -1,0 +1,52 @@
+{
+  "name": "paper_first_v1",
+  "conditions": [
+    "baseline",
+    "christian_heart",
+    "secular_matched"
+  ],
+  "models": [
+    "Qwen-0.5B-Instruct",
+    "Qwen-1.5B-Instruct"
+  ],
+  "targets": {
+    "main": {
+      "expected_total": 160,
+      "source_role": {
+        "HeartBench::supplement": 40,
+        "MoralStories::motive_main": 80,
+        "MoralStories::same_heart_control": 40
+      },
+      "moral_stories_pair_type": {
+        "same_act_different_motive": 50,
+        "same_norm_different_heart": 20,
+        "same_consequence_different_motive": 10,
+        "same_intention_moral_vs_immoral_action": 40
+      }
+    },
+    "pilot": {
+      "expected_total": 20,
+      "source_role": {
+        "MoralStories::motive_main": 10,
+        "MoralStories::same_heart_control": 5,
+        "HeartBench::pilot_probe": 5
+      }
+    }
+  },
+  "gates": {
+    "require_review_status": [
+      "reviewed",
+      "approved"
+    ],
+    "max_domain_share": 0.3,
+    "max_motive_task_b_imbalance": 0.25
+  },
+  "pilot_health_thresholds": {
+    "max_parse_failure_rate": 0.02,
+    "max_explanation_ratio_vs_baseline": 1.35,
+    "max_task_b_swap_accuracy_gap": 0.15,
+    "min_same_heart_control_accuracy": 0.8,
+    "max_heart_overreach_rate": 0.2,
+    "max_overreach_delta_without_hss_gain": 0.1
+  }
+}

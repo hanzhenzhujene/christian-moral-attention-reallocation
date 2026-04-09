@@ -1,0 +1,88 @@
+{
+  "summaries": [
+    {
+      "model": "Qwen-0.5B-Instruct",
+      "condition": "baseline",
+      "n_items": 20,
+      "copy_exact_match_relation_accuracy": 1.0,
+      "relation_pass_accuracy": 1.0,
+      "control_copy_exact_match_rate": 1.0,
+      "control_final_same_rate": 1.0,
+      "motive_final_task_b_accuracy": 0.8,
+      "gate_source_distribution": {
+        "exact_copy_match": 0.25,
+        "inward_worse_pass": 0.75
+      }
+    },
+    {
+      "model": "Qwen-0.5B-Instruct",
+      "condition": "christian_heart",
+      "n_items": 20,
+      "copy_exact_match_relation_accuracy": 1.0,
+      "relation_pass_accuracy": 1.0,
+      "control_copy_exact_match_rate": 1.0,
+      "control_final_same_rate": 1.0,
+      "motive_final_task_b_accuracy": 0.4,
+      "gate_source_distribution": {
+        "exact_copy_match": 0.25,
+        "inward_worse_pass": 0.75
+      }
+    },
+    {
+      "model": "Qwen-0.5B-Instruct",
+      "condition": "secular_matched",
+      "n_items": 20,
+      "copy_exact_match_relation_accuracy": 1.0,
+      "relation_pass_accuracy": 1.0,
+      "control_copy_exact_match_rate": 1.0,
+      "control_final_same_rate": 1.0,
+      "motive_final_task_b_accuracy": 0.8667,
+      "gate_source_distribution": {
+        "exact_copy_match": 0.25,
+        "inward_worse_pass": 0.75
+      }
+    },
+    {
+      "model": "Qwen-1.5B-Instruct",
+      "condition": "baseline",
+      "n_items": 20,
+      "copy_exact_match_relation_accuracy": 1.0,
+      "relation_pass_accuracy": 1.0,
+      "control_copy_exact_match_rate": 1.0,
+      "control_final_same_rate": 1.0,
+      "motive_final_task_b_accuracy": 0.8,
+      "gate_source_distribution": {
+        "exact_copy_match": 0.25,
+        "inward_worse_pass": 0.75
+      }
+    },
+    {
+      "model": "Qwen-1.5B-Instruct",
+      "condition": "christian_heart",
+      "n_items": 20,
+      "copy_exact_match_relation_accuracy": 1.0,
+      "relation_pass_accuracy": 1.0,
+      "control_copy_exact_match_rate": 1.0,
+      "control_final_same_rate": 1.0,
+      "motive_final_task_b_accuracy": 0.8667,
+      "gate_source_distribution": {
+        "exact_copy_match": 0.25,
+        "inward_worse_pass": 0.75
+      }
+    },
+    {
+      "model": "Qwen-1.5B-Instruct",
+      "condition": "secular_matched",
+      "n_items": 20,
+      "copy_exact_match_relation_accuracy": 1.0,
+      "relation_pass_accuracy": 1.0,
+      "control_copy_exact_match_rate": 1.0,
+      "control_final_same_rate": 1.0,
+      "motive_final_task_b_accuracy": 0.6667,
+      "gate_source_distribution": {
+        "exact_copy_match": 0.25,
+        "inward_worse_pass": 0.75
+      }
+    }
+  ]
+}

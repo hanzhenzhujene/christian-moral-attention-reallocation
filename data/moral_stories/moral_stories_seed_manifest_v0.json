@@ -1,0 +1,156 @@
+[
+  {
+    "item_id": "MS_37TD41K0AI7TYQGNUFTSCYCNT25SCN",
+    "domain": "family",
+    "difficulty": "medium",
+    "primary_diagnostic_dimension": "consequence",
+    "notes": "Control slice: dangerous safety measure creates avoidable physical risk."
+  },
+  {
+    "item_id": "MS_3FTOP5WARGMG5V2HV5RUPWJZNBOJ0V",
+    "domain": "family",
+    "difficulty": "easy",
+    "primary_diagnostic_dimension": "rule",
+    "notes": "Control slice: household obligation versus skipping an assigned chore."
+  },
+  {
+    "item_id": "MS_34J10VATJGW8YDNAUL09S1VHP8CQIL",
+    "domain": "family",
+    "difficulty": "easy",
+    "primary_diagnostic_dimension": "rule",
+    "notes": "Control slice: complying with a request not to disturb someone studying."
+  },
+  {
+    "item_id": "MS_3RUIQRXJBCMZXHF3NJPQ3VOFUJRLL1",
+    "domain": "school",
+    "difficulty": "easy",
+    "primary_diagnostic_dimension": "outward_act",
+    "notes": "Control slice: appreciative help versus dismissive treatment of a tutor."
+  },
+  {
+    "item_id": "MS_3OCHAWUVGPIJD5EAG2GDZP6NEGOXK2",
+    "domain": "school",
+    "difficulty": "medium",
+    "primary_diagnostic_dimension": "outward_act",
+    "notes": "Control slice: discipline without abuse versus violent classroom behavior."
+  },
+  {
+    "item_id": "MS_3SB5N7Y3O426ETCGNZ6RSJRJVFQ0GJ",
+    "domain": "school",
+    "difficulty": "easy",
+    "primary_diagnostic_dimension": "rule",
+    "notes": "Control slice: truthful resume versus lying for a job."
+  },
+  {
+    "item_id": "MS_388U7OUMF8ZX3JLU3A03RN5QYL90RI",
+    "domain": "family",
+    "difficulty": "easy",
+    "primary_diagnostic_dimension": "consequence",
+    "notes": "Control slice: supportive response versus leaving a student-child without help."
+  },
+  {
+    "item_id": "MS_3PM8NZGV8ZE5O8C5T70AVBIWDCEXQ8",
+    "domain": "friendship",
+    "difficulty": "medium",
+    "primary_diagnostic_dimension": "rule",
+    "notes": "Control slice: fidelity versus reciprocal flirting while engaged."
+  },
+  {
+    "item_id": "MS_3U5NZHP4LS0N26BBOQ3ZSK4SIUZPHC",
+    "domain": "friendship",
+    "difficulty": "easy",
+    "primary_diagnostic_dimension": "rule",
+    "notes": "Control slice: honoring a friend's invitation versus declining for convenience."
+  },
+  {
+    "item_id": "MS_3XM0HYN6NLXBIWK9YPVT7H7FRX2PEU",
+    "domain": "community",
+    "difficulty": "medium",
+    "primary_diagnostic_dimension": "outward_act",
+    "notes": "Control slice: lawful enforcement versus physical assault."
+  },
+  {
+    "item_id": "MS_3ND9UOO81L0F8BR2RXWSC65VUWMLWZ",
+    "domain": "friendship",
+    "difficulty": "medium",
+    "primary_diagnostic_dimension": "outward_act",
+    "notes": "Control slice: focusing on the host versus publicly shaming guests."
+  },
+  {
+    "item_id": "MS_3OJSZ2ATDTUMG7NGR28931AHDQF57F",
+    "domain": "workplace",
+    "difficulty": "easy",
+    "primary_diagnostic_dimension": "consequence",
+    "notes": "Control slice: waiting briefly versus abandoning a commuting partner."
+  },
+  {
+    "item_id": "MS_3OWEPKL08AAQ6WTMV24VXIA34QB7NX",
+    "domain": "workplace",
+    "difficulty": "medium",
+    "primary_diagnostic_dimension": "outward_act",
+    "notes": "Control slice: measured confrontation versus escalating into a workplace argument."
+  },
+  {
+    "item_id": "MS_3EFVCAY5L47YNK7KQ949IBPH7UGJ85",
+    "domain": "friendship",
+    "difficulty": "easy",
+    "primary_diagnostic_dimension": "rule",
+    "notes": "Control slice: honest breakup conversation versus ghosting."
+  },
+  {
+    "item_id": "MS_34S6N1K2ZWHXBLWDWYASB3V8DCMHLE",
+    "domain": "family",
+    "difficulty": "easy",
+    "primary_diagnostic_dimension": "consequence",
+    "notes": "Control slice: supportive celebration versus disruptive behavior that harms others."
+  },
+  {
+    "item_id": "MS_3NVC2EB65RX2HCWD0SAG1HWU4AS3YI",
+    "domain": "friendship",
+    "difficulty": "easy",
+    "primary_diagnostic_dimension": "outward_act",
+    "notes": "Control slice: helping an embarrassed friend versus mocking him."
+  },
+  {
+    "item_id": "MS_3U8YCDAGXQEXRI6UQVB3MXVL3XJQ0G",
+    "domain": "family",
+    "difficulty": "medium",
+    "primary_diagnostic_dimension": "outward_act",
+    "notes": "Control slice: patient support versus prematurely pressuring a daughter to end a relationship."
+  },
+  {
+    "item_id": "MS_3TU5ZICBREZF97BXLZOIFC13K5XQ8N",
+    "domain": "workplace",
+    "difficulty": "medium",
+    "primary_diagnostic_dimension": "rule",
+    "notes": "Control slice: rejecting an affair versus entering one."
+  },
+  {
+    "item_id": "MS_3K9FOBBF2IHPLHIOZW55GNS41NHLND",
+    "domain": "caregiving",
+    "difficulty": "medium",
+    "primary_diagnostic_dimension": "rule",
+    "notes": "Control slice: honest medical disclosure versus lying to a doctor."
+  },
+  {
+    "item_id": "MS_33TIN5LC058OWELTH1BQSUZG3ZTY9E",
+    "domain": "community",
+    "difficulty": "easy",
+    "primary_diagnostic_dimension": "rule",
+    "notes": "Control slice: redeeming a valid coupon versus dine-and-dash theft."
+  },
+  {
+    "item_id": "MS_3M23Y66PO354I97MKOGPQYKDWTAS60",
+    "domain": "workplace",
+    "difficulty": "medium",
+    "primary_diagnostic_dimension": "rule",
+    "notes": "Control slice: getting permission for ideas versus misusing private employee files."
+  },
+  {
+    "item_id": "MS_3CTOC39K38OUN621G4C34BTMVE1J7G",
+    "domain": "community",
+    "difficulty": "medium",
+    "primary_diagnostic_dimension": "rule",
+    "notes": "Control slice: legitimate sale versus direct scam."
+  }
+]
