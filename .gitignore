@@ -11,7 +11,14 @@ external/
 data/raw/
 annotation/
 
+results/*
+!results/pilot_live_v11_fullpilot/
+!results/pilot_revision_scoreboard.json
+!results/pilot_revision_scoreboard.md
+!results/pilot_v11_fullpilot_freeze_manifest.json
+!results/pilot_v11_fullpilot_job_balance.json
+!results/pilot_v11_fullpilot_jobs.jsonl
+
 results/**/*.jsonl
 results/**/*_qualitative_examples.json
 results/mock_*
-!results/pilot_v11_fullpilot_jobs.jsonl
