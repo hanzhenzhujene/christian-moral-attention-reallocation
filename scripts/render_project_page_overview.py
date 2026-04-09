@@ -5,14 +5,13 @@ from __future__ import annotations
 
 import argparse
 import json
-import math
 import sys
 from pathlib import Path
-from typing import Dict, Sequence
+from typing import Dict, List, Sequence
 
 
 WIDTH = 1200
-HEIGHT = 820
+HEIGHT = 930
 CARD_FILL = "#f8fafc"
 CARD_STROKE = "#d7dee8"
 TEXT = "#122033"
@@ -53,6 +52,33 @@ def esc(text: str) -> str:
     )
 
 
+def wrap_text(text: str, max_width: int, font_size: int) -> List[str]:
+    avg_char_width = max(6.0, font_size * 0.52)
+    max_chars = max(10, int(max_width / avg_char_width))
+    words = text.split()
+    if not words:
+        return [""]
+    lines: List[str] = []
+    current = words[0]
+    for word in words[1:]:
+        candidate = f"{current} {word}"
+        if len(candidate) <= max_chars:
+            current = candidate
+        else:
+            lines.append(current)
+            current = word
+    lines.append(current)
+    return lines
+
+
+def multiline_text(x: int, y: int, lines: Sequence[str], font_size: int, line_gap: int, fill: str) -> str:
+    tspans = []
+    for idx, line in enumerate(lines):
+        dy = 0 if idx == 0 else line_gap
+        tspans.append(f'<tspan x="{x}" dy="{dy}">{esc(line)}</tspan>')
+    return f'<text x="{x}" y="{y}" font-size="{font_size}" fill="{fill}">{"".join(tspans)}</text>'
+
+
 def card(x: int, y: int, w: int, h: int, title: str, value: str, subtitle: str, tone: str = "default") -> str:
     title_fill = TEXT
     value_fill = TEXT
@@ -60,11 +86,12 @@ def card(x: int, y: int, w: int, h: int, title: str, value: str, subtitle: str, 
         value_fill = ACCENT
     elif tone == "warn":
         value_fill = ALERT
+    subtitle_lines = wrap_text(subtitle, w - 48, 14)
     return f"""
     <rect x="{x}" y="{y}" width="{w}" height="{h}" rx="18" fill="{CARD_FILL}" stroke="{CARD_STROKE}" />
     <text x="{x + 24}" y="{y + 32}" font-size="18" font-weight="600" fill="{title_fill}">{esc(title)}</text>
     <text x="{x + 24}" y="{y + 82}" font-size="38" font-weight="700" fill="{value_fill}">{esc(value)}</text>
-    <text x="{x + 24}" y="{y + 112}" font-size="16" fill="{MUTED}">{esc(subtitle)}</text>
+    {multiline_text(x + 24, y + 112, subtitle_lines, 14, 18, MUTED)}
     """
 
 
@@ -88,23 +115,24 @@ def model_panel(x: int, y: int, model: str, metrics: Dict[str, Dict[str, float]]
     ]
     hss_rows = []
     gap_rows = []
+    subtitle_lines = wrap_text("Held-out 20-item pilot, benchmark-assisted multi-pass Task B", 490, 14)
     for idx, (key, label, color) in enumerate(labels):
-        hss_rows.append(bar_row(x + 28, y + 78 + idx * 42, label, metrics[key]["heart_sensitivity_score"], color))
-        gap_rows.append(bar_row(x + 28, y + 246 + idx * 42, label, min(1.0, swap_gaps[key]), color))
+        hss_rows.append(bar_row(x + 28, y + 148 + idx * 42, label, metrics[key]["heart_sensitivity_score"], color))
+        gap_rows.append(bar_row(x + 28, y + 320 + idx * 42, label, min(1.0, swap_gaps[key]), color))
     same_heart = metrics["baseline"]["same_heart_control_accuracy"]
     overreach = metrics["baseline"]["heart_overreach_rate"]
     return f"""
-    <rect x="{x}" y="{y}" width="548" height="360" rx="22" fill="{CARD_FILL}" stroke="{CARD_STROKE}" />
+    <rect x="{x}" y="{y}" width="548" height="452" rx="22" fill="{CARD_FILL}" stroke="{CARD_STROKE}" />
     <text x="{x + 28}" y="{y + 40}" font-size="26" font-weight="700" fill="{TEXT}">{esc(model)}</text>
-    <text x="{x + 28}" y="{y + 66}" font-size="15" fill="{MUTED}">Held-out 20-item pilot, benchmark-assisted multi-pass Task B</text>
+    {multiline_text(x + 28, y + 68, subtitle_lines, 14, 18, MUTED)}
 
-    <text x="{x + 28}" y="{y + 110}" font-size="18" font-weight="700" fill="{TEXT}">Heart-Sensitivity Score</text>
+    <text x="{x + 28}" y="{y + 122}" font-size="18" font-weight="700" fill="{TEXT}">Heart-Sensitivity Score</text>
     {''.join(hss_rows)}
 
-    <text x="{x + 28}" y="{y + 278}" font-size="18" font-weight="700" fill="{TEXT}">Residual Task B Swap-Gap</text>
+    <text x="{x + 28}" y="{y + 294}" font-size="18" font-weight="700" fill="{TEXT}">Residual Task B Swap-Gap</text>
     {''.join(gap_rows)}
 
-    <text x="{x + 28}" y="{y + 344}" font-size="14" fill="{MUTED}">Same-heart control = {same_heart:.1f} | Heart overreach = {overreach:.1f}</text>
+    <text x="{x + 28}" y="{y + 426}" font-size="14" fill="{MUTED}">Same-heart control = {same_heart:.1f} | Heart overreach = {overreach:.1f}</text>
     """
 
 
@@ -157,16 +185,16 @@ def main(argv: Sequence[str]) -> int:
   <text x="56" y="74" font-size="40" font-weight="800" fill="{TEXT}">Christian Moral Attention Reallocation</text>
   <text x="56" y="108" font-size="20" fill="{MUTED}">Held-out v11 pilot: benchmark-assisted multi-pass Task B removes same-heart overreach, but order sensitivity still blocks full freeze.</text>
 
-  {card(56, 142, 250, 126, "Valid Pilot Calls", f"{valid_records}/{expected_total}", "Both Qwen models completed all held-out jobs.", "good")}
-  {card(326, 142, 250, 126, "Parse Failure Rate", f"{parse_failure:.1f}", "No JSON / schema failures in the held-out run.", "good")}
-  {card(596, 142, 250, 126, "Same-Heart Control", "1.0", "Every model-condition cell preserved Same on controls.", "good")}
-  {card(866, 142, 278, 126, "Residual Blocking Metric", f"{max_gap:.3f}", "Task B swap-gap remains above threshold in some cells.", "warn")}
+  {card(56, 142, 250, 146, "Valid Pilot Calls", f"{valid_records}/{expected_total}", "Both Qwen models completed every held-out job.", "good")}
+  {card(326, 142, 250, 146, "Parse Failure Rate", f"{parse_failure:.1f}", "No JSON or schema failures in the held-out run.", "good")}
+  {card(596, 142, 250, 146, "Same-Heart Control", "1.0", "All model-condition cells preserved Same on controls.", "good")}
+  {card(866, 142, 278, 146, "Residual Blocking Metric", f"{max_gap:.3f}", "Task B swap-gap still exceeds the study threshold in some cells.", "warn")}
 
-  {model_panel(56, 304, "Qwen-0.5B-Instruct", metrics["Qwen-0.5B-Instruct"], swap_gaps["Qwen-0.5B-Instruct"])}
-  {model_panel(596, 304, "Qwen-1.5B-Instruct", metrics["Qwen-1.5B-Instruct"], swap_gaps["Qwen-1.5B-Instruct"])}
+  {model_panel(56, 326, "Qwen-0.5B-Instruct", metrics["Qwen-0.5B-Instruct"], swap_gaps["Qwen-0.5B-Instruct"])}
+  {model_panel(596, 326, "Qwen-1.5B-Instruct", metrics["Qwen-1.5B-Instruct"], swap_gaps["Qwen-1.5B-Instruct"])}
 
-  {note_panel(56, 684, 540, 108, "What held", ["Zero held-out heart overreach.", "Same-heart controls stayed perfect under all conditions."], "good")}
-  {note_panel(604, 684, 540, 108, "What still blocks freeze", ["Swap-gap is concentrated in same-act / different-motive pairs.", "Christian effect is model-dependent rather than uniform."], "warn")}
+  {note_panel(56, 802, 540, 108, "What held", ["Zero held-out heart overreach.", "Same-heart controls stayed perfect under all conditions."], "good")}
+  {note_panel(604, 802, 540, 108, "What still blocks freeze", ["Swap-gap is concentrated in same-act / different-motive pairs.", "Christian effect is model-dependent rather than uniform."], "warn")}
 </svg>
 """
 
