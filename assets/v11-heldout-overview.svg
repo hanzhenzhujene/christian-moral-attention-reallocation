@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="930" viewBox="0 0 1200 930" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="940" viewBox="0 0 1200 940" role="img" aria-labelledby="title desc">
   <title id="title">Christian Moral Attention Reallocation: held-out v11 pilot overview</title>
   <desc id="desc">Held-out v11 pilot summary showing zero parse failures, perfect same-heart control behavior, zero heart overreach, and residual Task B swap-gap concentrated in same-act different-motive pairs.</desc>
   <defs>
@@ -7,132 +7,132 @@
       <stop offset="100%" stop-color="#f3f7fb" />
     </linearGradient>
   </defs>
-  <rect width="1200" height="930" fill="url(#bg)" />
+  <rect width="1200" height="940" fill="url(#bg)" />
   <text x="56" y="74" font-size="40" font-weight="800" fill="#122033">Christian Moral Attention Reallocation</text>
-  <text x="56" y="108" font-size="20" fill="#5c6b7c">Held-out v11 pilot: benchmark-assisted multi-pass Task B removes same-heart overreach, but order sensitivity still blocks full freeze.</text>
+  <text x="56" y="108" font-size="18" fill="#5c6b7c"><tspan x="56" dy="0">Held-out v11 pilot: multi-pass Task B removes same-heart overreach, but swap-gap still blocks freeze.</tspan></text>
 
   
-    <rect x="56" y="142" width="250" height="146" rx="18" fill="#f8fafc" stroke="#d7dee8" />
-    <text x="80" y="174" font-size="18" font-weight="600" fill="#122033">Valid Pilot Calls</text>
-    <text x="80" y="224" font-size="38" font-weight="700" fill="#0f766e">120/120</text>
-    <text x="80" y="254" font-size="14" fill="#5c6b7c"><tspan x="80" dy="0">Both Qwen models completed</tspan><tspan x="80" dy="18">every held-out job.</tspan></text>
+    <rect x="56" y="148" width="250" height="146" rx="18" fill="#f8fafc" stroke="#d7dee8" />
+    <text x="80" y="180" font-size="18" font-weight="600" fill="#122033">Valid Pilot Calls</text>
+    <text x="80" y="230" font-size="38" font-weight="700" fill="#0f766e">120/120</text>
+    <text x="80" y="260" font-size="13" fill="#5c6b7c"><tspan x="80" dy="0">Both Qwen models completed</tspan><tspan x="80" dy="16">every held-out job.</tspan></text>
     
   
-    <rect x="326" y="142" width="250" height="146" rx="18" fill="#f8fafc" stroke="#d7dee8" />
-    <text x="350" y="174" font-size="18" font-weight="600" fill="#122033">Parse Failure Rate</text>
-    <text x="350" y="224" font-size="38" font-weight="700" fill="#0f766e">0.0</text>
-    <text x="350" y="254" font-size="14" fill="#5c6b7c"><tspan x="350" dy="0">No JSON or schema failures</tspan><tspan x="350" dy="18">in the held-out run.</tspan></text>
+    <rect x="326" y="148" width="250" height="146" rx="18" fill="#f8fafc" stroke="#d7dee8" />
+    <text x="350" y="180" font-size="18" font-weight="600" fill="#122033">Parse Failure Rate</text>
+    <text x="350" y="230" font-size="38" font-weight="700" fill="#0f766e">0.0</text>
+    <text x="350" y="260" font-size="13" fill="#5c6b7c"><tspan x="350" dy="0">No JSON or schema failures in</tspan><tspan x="350" dy="16">the held-out run.</tspan></text>
     
   
-    <rect x="596" y="142" width="250" height="146" rx="18" fill="#f8fafc" stroke="#d7dee8" />
-    <text x="620" y="174" font-size="18" font-weight="600" fill="#122033">Same-Heart Control</text>
-    <text x="620" y="224" font-size="38" font-weight="700" fill="#0f766e">1.0</text>
-    <text x="620" y="254" font-size="14" fill="#5c6b7c"><tspan x="620" dy="0">All model-condition cells</tspan><tspan x="620" dy="18">preserved Same on controls.</tspan></text>
+    <rect x="596" y="148" width="250" height="146" rx="18" fill="#f8fafc" stroke="#d7dee8" />
+    <text x="620" y="180" font-size="18" font-weight="600" fill="#122033">Same-Heart Control</text>
+    <text x="620" y="230" font-size="38" font-weight="700" fill="#0f766e">1.0</text>
+    <text x="620" y="260" font-size="13" fill="#5c6b7c"><tspan x="620" dy="0">All model-condition cells</tspan><tspan x="620" dy="16">preserved Same on controls.</tspan></text>
     
   
-    <rect x="866" y="142" width="278" height="146" rx="18" fill="#f8fafc" stroke="#d7dee8" />
-    <text x="890" y="174" font-size="18" font-weight="600" fill="#122033">Residual Blocking Metric</text>
-    <text x="890" y="224" font-size="38" font-weight="700" fill="#b45309">0.407</text>
-    <text x="890" y="254" font-size="14" fill="#5c6b7c"><tspan x="890" dy="0">Task B swap-gap still exceeds</tspan><tspan x="890" dy="18">the study threshold in some</tspan><tspan x="890" dy="18">cells.</tspan></text>
-    
-
-  
-    <rect x="56" y="326" width="548" height="452" rx="22" fill="#f8fafc" stroke="#d7dee8" />
-    <text x="84" y="366" font-size="26" font-weight="700" fill="#122033">Qwen-0.5B-Instruct</text>
-    <text x="84" y="394" font-size="14" fill="#5c6b7c"><tspan x="84" dy="0">Held-out 20-item pilot, benchmark-assisted multi-pass Task B</tspan></text>
-
-    <text x="84" y="448" font-size="18" font-weight="700" fill="#122033">Heart-Sensitivity Score</text>
-    
-    <text x="84" y="480" font-size="16" font-weight="600" fill="#122033">Baseline</text>
-    <rect x="202" y="464" width="300" height="16" rx="8" fill="#e8edf4" />
-    <rect x="202" y="464" width="240" height="16" rx="8" fill="#5166d6" />
-    <text x="514" y="480" font-size="16" fill="#122033" text-anchor="end">0.800</text>
-    
-    <text x="84" y="522" font-size="16" font-weight="600" fill="#122033">Christian</text>
-    <rect x="202" y="506" width="300" height="16" rx="8" fill="#e8edf4" />
-    <rect x="202" y="506" width="120" height="16" rx="8" fill="#12805c" />
-    <text x="514" y="522" font-size="16" fill="#122033" text-anchor="end">0.400</text>
-    
-    <text x="84" y="564" font-size="16" font-weight="600" fill="#122033">Secular</text>
-    <rect x="202" y="548" width="300" height="16" rx="8" fill="#e8edf4" />
-    <rect x="202" y="548" width="260" height="16" rx="8" fill="#d97706" />
-    <text x="514" y="564" font-size="16" fill="#122033" text-anchor="end">0.867</text>
-    
-
-    <text x="84" y="620" font-size="18" font-weight="700" fill="#122033">Residual Task B Swap-Gap</text>
-    
-    <text x="84" y="652" font-size="16" font-weight="600" fill="#122033">Baseline</text>
-    <rect x="202" y="636" width="300" height="16" rx="8" fill="#e8edf4" />
-    <rect x="202" y="636" width="21" height="16" rx="8" fill="#5166d6" />
-    <text x="514" y="652" font-size="16" fill="#122033" text-anchor="end">0.071</text>
-    
-    <text x="84" y="694" font-size="16" font-weight="600" fill="#122033">Christian</text>
-    <rect x="202" y="678" width="300" height="16" rx="8" fill="#e8edf4" />
-    <rect x="202" y="678" width="121" height="16" rx="8" fill="#12805c" />
-    <text x="514" y="694" font-size="16" fill="#122033" text-anchor="end">0.407</text>
-    
-    <text x="84" y="736" font-size="16" font-weight="600" fill="#122033">Secular</text>
-    <rect x="202" y="720" width="300" height="16" rx="8" fill="#e8edf4" />
-    <rect x="202" y="720" width="6" height="16" rx="8" fill="#d97706" />
-    <text x="514" y="736" font-size="16" fill="#122033" text-anchor="end">0.020</text>
-    
-
-    <text x="84" y="752" font-size="14" fill="#5c6b7c">Same-heart control = 1.0 | Heart overreach = 0.0</text>
-    
-  
-    <rect x="596" y="326" width="548" height="452" rx="22" fill="#f8fafc" stroke="#d7dee8" />
-    <text x="624" y="366" font-size="26" font-weight="700" fill="#122033">Qwen-1.5B-Instruct</text>
-    <text x="624" y="394" font-size="14" fill="#5c6b7c"><tspan x="624" dy="0">Held-out 20-item pilot, benchmark-assisted multi-pass Task B</tspan></text>
-
-    <text x="624" y="448" font-size="18" font-weight="700" fill="#122033">Heart-Sensitivity Score</text>
-    
-    <text x="624" y="480" font-size="16" font-weight="600" fill="#122033">Baseline</text>
-    <rect x="742" y="464" width="300" height="16" rx="8" fill="#e8edf4" />
-    <rect x="742" y="464" width="240" height="16" rx="8" fill="#5166d6" />
-    <text x="1054" y="480" font-size="16" fill="#122033" text-anchor="end">0.800</text>
-    
-    <text x="624" y="522" font-size="16" font-weight="600" fill="#122033">Christian</text>
-    <rect x="742" y="506" width="300" height="16" rx="8" fill="#e8edf4" />
-    <rect x="742" y="506" width="260" height="16" rx="8" fill="#12805c" />
-    <text x="1054" y="522" font-size="16" fill="#122033" text-anchor="end">0.867</text>
-    
-    <text x="624" y="564" font-size="16" font-weight="600" fill="#122033">Secular</text>
-    <rect x="742" y="548" width="300" height="16" rx="8" fill="#e8edf4" />
-    <rect x="742" y="548" width="200" height="16" rx="8" fill="#d97706" />
-    <text x="1054" y="564" font-size="16" fill="#122033" text-anchor="end">0.667</text>
-    
-
-    <text x="624" y="620" font-size="18" font-weight="700" fill="#122033">Residual Task B Swap-Gap</text>
-    
-    <text x="624" y="652" font-size="16" font-weight="600" fill="#122033">Baseline</text>
-    <rect x="742" y="636" width="300" height="16" rx="8" fill="#e8edf4" />
-    <rect x="742" y="636" width="81" height="16" rx="8" fill="#5166d6" />
-    <text x="1054" y="652" font-size="16" fill="#122033" text-anchor="end">0.273</text>
-    
-    <text x="624" y="694" font-size="16" font-weight="600" fill="#122033">Christian</text>
-    <rect x="742" y="678" width="300" height="16" rx="8" fill="#e8edf4" />
-    <rect x="742" y="678" width="46" height="16" rx="8" fill="#12805c" />
-    <text x="1054" y="694" font-size="16" fill="#122033" text-anchor="end">0.154</text>
-    
-    <text x="624" y="736" font-size="16" font-weight="600" fill="#122033">Secular</text>
-    <rect x="742" y="720" width="300" height="16" rx="8" fill="#e8edf4" />
-    <rect x="742" y="720" width="75" height="16" rx="8" fill="#d97706" />
-    <text x="1054" y="736" font-size="16" fill="#122033" text-anchor="end">0.253</text>
-    
-
-    <text x="624" y="752" font-size="14" fill="#5c6b7c">Same-heart control = 1.0 | Heart overreach = 0.0</text>
+    <rect x="866" y="148" width="278" height="146" rx="18" fill="#f8fafc" stroke="#d7dee8" />
+    <text x="890" y="180" font-size="18" font-weight="600" fill="#122033">Residual Blocking Metric</text>
+    <text x="890" y="230" font-size="38" font-weight="700" fill="#b45309">0.407</text>
+    <text x="890" y="260" font-size="13" fill="#5c6b7c"><tspan x="890" dy="0">Task B swap-gap still exceeds the</tspan><tspan x="890" dy="16">study threshold in some cells.</tspan></text>
     
 
   
-    <rect x="56" y="802" width="540" height="108" rx="22" fill="#f8fafc" stroke="#d7dee8" />
-    <rect x="56" y="802" width="8" height="108" rx="22" fill="#0f766e" />
-    <text x="84" y="840" font-size="22" font-weight="700" fill="#122033">What held</text>
-    <text x="84" y="874" font-size="18" fill="#122033">Zero held-out heart overreach.</text><text x="84" y="902" font-size="18" fill="#122033">Same-heart controls stayed perfect under all conditions.</text>
+    <rect x="56" y="332" width="548" height="452" rx="22" fill="#f8fafc" stroke="#d7dee8" />
+    <text x="84" y="372" font-size="26" font-weight="700" fill="#122033">Qwen-0.5B-Instruct</text>
+    <text x="84" y="400" font-size="14" fill="#5c6b7c"><tspan x="84" dy="0">Held-out 20-item pilot, benchmark-assisted multi-pass Task B</tspan></text>
+
+    <text x="84" y="454" font-size="18" font-weight="700" fill="#122033">Heart-Sensitivity Score</text>
+    
+    <text x="84" y="486" font-size="16" font-weight="600" fill="#122033">Baseline</text>
+    <rect x="202" y="470" width="300" height="16" rx="8" fill="#e8edf4" />
+    <rect x="202" y="470" width="240" height="16" rx="8" fill="#5166d6" />
+    <text x="514" y="486" font-size="16" fill="#122033" text-anchor="end">0.800</text>
+    
+    <text x="84" y="528" font-size="16" font-weight="600" fill="#122033">Christian</text>
+    <rect x="202" y="512" width="300" height="16" rx="8" fill="#e8edf4" />
+    <rect x="202" y="512" width="120" height="16" rx="8" fill="#12805c" />
+    <text x="514" y="528" font-size="16" fill="#122033" text-anchor="end">0.400</text>
+    
+    <text x="84" y="570" font-size="16" font-weight="600" fill="#122033">Secular</text>
+    <rect x="202" y="554" width="300" height="16" rx="8" fill="#e8edf4" />
+    <rect x="202" y="554" width="260" height="16" rx="8" fill="#d97706" />
+    <text x="514" y="570" font-size="16" fill="#122033" text-anchor="end">0.867</text>
+    
+
+    <text x="84" y="626" font-size="18" font-weight="700" fill="#122033">Residual Task B Swap-Gap</text>
+    
+    <text x="84" y="658" font-size="16" font-weight="600" fill="#122033">Baseline</text>
+    <rect x="202" y="642" width="300" height="16" rx="8" fill="#e8edf4" />
+    <rect x="202" y="642" width="21" height="16" rx="8" fill="#5166d6" />
+    <text x="514" y="658" font-size="16" fill="#122033" text-anchor="end">0.071</text>
+    
+    <text x="84" y="700" font-size="16" font-weight="600" fill="#122033">Christian</text>
+    <rect x="202" y="684" width="300" height="16" rx="8" fill="#e8edf4" />
+    <rect x="202" y="684" width="121" height="16" rx="8" fill="#12805c" />
+    <text x="514" y="700" font-size="16" fill="#122033" text-anchor="end">0.407</text>
+    
+    <text x="84" y="742" font-size="16" font-weight="600" fill="#122033">Secular</text>
+    <rect x="202" y="726" width="300" height="16" rx="8" fill="#e8edf4" />
+    <rect x="202" y="726" width="6" height="16" rx="8" fill="#d97706" />
+    <text x="514" y="742" font-size="16" fill="#122033" text-anchor="end">0.020</text>
+    
+
+    <text x="84" y="758" font-size="14" fill="#5c6b7c">Same-heart control = 1.0 | Heart overreach = 0.0</text>
     
   
-    <rect x="604" y="802" width="540" height="108" rx="22" fill="#f8fafc" stroke="#d7dee8" />
-    <rect x="604" y="802" width="8" height="108" rx="22" fill="#b45309" />
-    <text x="632" y="840" font-size="22" font-weight="700" fill="#122033">What still blocks freeze</text>
-    <text x="632" y="874" font-size="18" fill="#122033">Swap-gap is concentrated in same-act / different-motive pairs.</text><text x="632" y="902" font-size="18" fill="#122033">Christian effect is model-dependent rather than uniform.</text>
+    <rect x="596" y="332" width="548" height="452" rx="22" fill="#f8fafc" stroke="#d7dee8" />
+    <text x="624" y="372" font-size="26" font-weight="700" fill="#122033">Qwen-1.5B-Instruct</text>
+    <text x="624" y="400" font-size="14" fill="#5c6b7c"><tspan x="624" dy="0">Held-out 20-item pilot, benchmark-assisted multi-pass Task B</tspan></text>
+
+    <text x="624" y="454" font-size="18" font-weight="700" fill="#122033">Heart-Sensitivity Score</text>
+    
+    <text x="624" y="486" font-size="16" font-weight="600" fill="#122033">Baseline</text>
+    <rect x="742" y="470" width="300" height="16" rx="8" fill="#e8edf4" />
+    <rect x="742" y="470" width="240" height="16" rx="8" fill="#5166d6" />
+    <text x="1054" y="486" font-size="16" fill="#122033" text-anchor="end">0.800</text>
+    
+    <text x="624" y="528" font-size="16" font-weight="600" fill="#122033">Christian</text>
+    <rect x="742" y="512" width="300" height="16" rx="8" fill="#e8edf4" />
+    <rect x="742" y="512" width="260" height="16" rx="8" fill="#12805c" />
+    <text x="1054" y="528" font-size="16" fill="#122033" text-anchor="end">0.867</text>
+    
+    <text x="624" y="570" font-size="16" font-weight="600" fill="#122033">Secular</text>
+    <rect x="742" y="554" width="300" height="16" rx="8" fill="#e8edf4" />
+    <rect x="742" y="554" width="200" height="16" rx="8" fill="#d97706" />
+    <text x="1054" y="570" font-size="16" fill="#122033" text-anchor="end">0.667</text>
+    
+
+    <text x="624" y="626" font-size="18" font-weight="700" fill="#122033">Residual Task B Swap-Gap</text>
+    
+    <text x="624" y="658" font-size="16" font-weight="600" fill="#122033">Baseline</text>
+    <rect x="742" y="642" width="300" height="16" rx="8" fill="#e8edf4" />
+    <rect x="742" y="642" width="81" height="16" rx="8" fill="#5166d6" />
+    <text x="1054" y="658" font-size="16" fill="#122033" text-anchor="end">0.273</text>
+    
+    <text x="624" y="700" font-size="16" font-weight="600" fill="#122033">Christian</text>
+    <rect x="742" y="684" width="300" height="16" rx="8" fill="#e8edf4" />
+    <rect x="742" y="684" width="46" height="16" rx="8" fill="#12805c" />
+    <text x="1054" y="700" font-size="16" fill="#122033" text-anchor="end">0.154</text>
+    
+    <text x="624" y="742" font-size="16" font-weight="600" fill="#122033">Secular</text>
+    <rect x="742" y="726" width="300" height="16" rx="8" fill="#e8edf4" />
+    <rect x="742" y="726" width="75" height="16" rx="8" fill="#d97706" />
+    <text x="1054" y="742" font-size="16" fill="#122033" text-anchor="end">0.253</text>
+    
+
+    <text x="624" y="758" font-size="14" fill="#5c6b7c">Same-heart control = 1.0 | Heart overreach = 0.0</text>
+    
+
+  
+    <rect x="56" y="808" width="540" height="108" rx="22" fill="#f8fafc" stroke="#d7dee8" />
+    <rect x="56" y="808" width="8" height="108" rx="22" fill="#0f766e" />
+    <text x="84" y="846" font-size="22" font-weight="700" fill="#122033">What held</text>
+    <text x="84" y="880" font-size="18" fill="#122033">Zero held-out heart overreach.</text><text x="84" y="908" font-size="18" fill="#122033">Same-heart controls stayed perfect under all conditions.</text>
+    
+  
+    <rect x="604" y="808" width="540" height="108" rx="22" fill="#f8fafc" stroke="#d7dee8" />
+    <rect x="604" y="808" width="8" height="108" rx="22" fill="#b45309" />
+    <text x="632" y="846" font-size="22" font-weight="700" fill="#122033">What still blocks freeze</text>
+    <text x="632" y="880" font-size="18" fill="#122033">Swap-gap is concentrated in same-act / different-motive pairs.</text><text x="632" y="908" font-size="18" fill="#122033">Christian effect is model-dependent rather than uniform.</text>
     
 </svg>

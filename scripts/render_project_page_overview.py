@@ -11,7 +11,6 @@ from typing import Dict, List, Sequence
 
 
 WIDTH = 1200
-HEIGHT = 930
 CARD_FILL = "#f8fafc"
 CARD_STROKE = "#d7dee8"
 TEXT = "#122033"
@@ -86,12 +85,12 @@ def card(x: int, y: int, w: int, h: int, title: str, value: str, subtitle: str, 
         value_fill = ACCENT
     elif tone == "warn":
         value_fill = ALERT
-    subtitle_lines = wrap_text(subtitle, w - 48, 14)
+    subtitle_lines = wrap_text(subtitle, w - 48, 13)
     return f"""
     <rect x="{x}" y="{y}" width="{w}" height="{h}" rx="18" fill="{CARD_FILL}" stroke="{CARD_STROKE}" />
     <text x="{x + 24}" y="{y + 32}" font-size="18" font-weight="600" fill="{title_fill}">{esc(title)}</text>
     <text x="{x + 24}" y="{y + 82}" font-size="38" font-weight="700" fill="{value_fill}">{esc(value)}</text>
-    {multiline_text(x + 24, y + 112, subtitle_lines, 14, 18, MUTED)}
+    {multiline_text(x + 24, y + 112, subtitle_lines, 13, 16, MUTED)}
     """
 
 
@@ -171,8 +170,20 @@ def main(argv: Sequence[str]) -> int:
         for row in health["groups"]
         if row["task_b_swap_accuracy_gap"] is not None
     )
+    hero_subtitle_lines = wrap_text(
+        "Held-out v11 pilot: multi-pass Task B removes same-heart overreach, but swap-gap still blocks freeze.",
+        WIDTH - 112,
+        18,
+    )
+    cards_y = 148 + max(0, len(hero_subtitle_lines) - 1) * 24
+    cards_h = 146
+    panel_y = cards_y + cards_h + 38
+    panel_h = 452
+    note_y = panel_y + panel_h + 24
+    note_h = 108
+    canvas_height = note_y + note_h + 24
 
-    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}" role="img" aria-labelledby="title desc">
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{canvas_height}" viewBox="0 0 {WIDTH} {canvas_height}" role="img" aria-labelledby="title desc">
   <title id="title">Christian Moral Attention Reallocation: held-out v11 pilot overview</title>
   <desc id="desc">Held-out v11 pilot summary showing zero parse failures, perfect same-heart control behavior, zero heart overreach, and residual Task B swap-gap concentrated in same-act different-motive pairs.</desc>
   <defs>
@@ -181,20 +192,20 @@ def main(argv: Sequence[str]) -> int:
       <stop offset="100%" stop-color="#f3f7fb" />
     </linearGradient>
   </defs>
-  <rect width="{WIDTH}" height="{HEIGHT}" fill="url(#bg)" />
+  <rect width="{WIDTH}" height="{canvas_height}" fill="url(#bg)" />
   <text x="56" y="74" font-size="40" font-weight="800" fill="{TEXT}">Christian Moral Attention Reallocation</text>
-  <text x="56" y="108" font-size="20" fill="{MUTED}">Held-out v11 pilot: benchmark-assisted multi-pass Task B removes same-heart overreach, but order sensitivity still blocks full freeze.</text>
+  {multiline_text(56, 108, hero_subtitle_lines, 18, 22, MUTED)}
 
-  {card(56, 142, 250, 146, "Valid Pilot Calls", f"{valid_records}/{expected_total}", "Both Qwen models completed every held-out job.", "good")}
-  {card(326, 142, 250, 146, "Parse Failure Rate", f"{parse_failure:.1f}", "No JSON or schema failures in the held-out run.", "good")}
-  {card(596, 142, 250, 146, "Same-Heart Control", "1.0", "All model-condition cells preserved Same on controls.", "good")}
-  {card(866, 142, 278, 146, "Residual Blocking Metric", f"{max_gap:.3f}", "Task B swap-gap still exceeds the study threshold in some cells.", "warn")}
+  {card(56, cards_y, 250, cards_h, "Valid Pilot Calls", f"{valid_records}/{expected_total}", "Both Qwen models completed every held-out job.", "good")}
+  {card(326, cards_y, 250, cards_h, "Parse Failure Rate", f"{parse_failure:.1f}", "No JSON or schema failures in the held-out run.", "good")}
+  {card(596, cards_y, 250, cards_h, "Same-Heart Control", "1.0", "All model-condition cells preserved Same on controls.", "good")}
+  {card(866, cards_y, 278, cards_h, "Residual Blocking Metric", f"{max_gap:.3f}", "Task B swap-gap still exceeds the study threshold in some cells.", "warn")}
 
-  {model_panel(56, 326, "Qwen-0.5B-Instruct", metrics["Qwen-0.5B-Instruct"], swap_gaps["Qwen-0.5B-Instruct"])}
-  {model_panel(596, 326, "Qwen-1.5B-Instruct", metrics["Qwen-1.5B-Instruct"], swap_gaps["Qwen-1.5B-Instruct"])}
+  {model_panel(56, panel_y, "Qwen-0.5B-Instruct", metrics["Qwen-0.5B-Instruct"], swap_gaps["Qwen-0.5B-Instruct"])}
+  {model_panel(596, panel_y, "Qwen-1.5B-Instruct", metrics["Qwen-1.5B-Instruct"], swap_gaps["Qwen-1.5B-Instruct"])}
 
-  {note_panel(56, 802, 540, 108, "What held", ["Zero held-out heart overreach.", "Same-heart controls stayed perfect under all conditions."], "good")}
-  {note_panel(604, 802, 540, 108, "What still blocks freeze", ["Swap-gap is concentrated in same-act / different-motive pairs.", "Christian effect is model-dependent rather than uniform."], "warn")}
+  {note_panel(56, note_y, 540, note_h, "What held", ["Zero held-out heart overreach.", "Same-heart controls stayed perfect under all conditions."], "good")}
+  {note_panel(604, note_y, 540, note_h, "What still blocks freeze", ["Swap-gap is concentrated in same-act / different-motive pairs.", "Christian effect is model-dependent rather than uniform."], "warn")}
 </svg>
 """
 
