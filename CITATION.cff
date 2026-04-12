@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the software artifact below."
+title: "Christian Moral Attention Reallocation"
+type: software
+version: "v0.1-confirmation"
+date-released: 2026-04-12
+license: Apache-2.0
+authors:
+  - family-names: Zhu
+    given-names: Hanzhen
+    email: hanzhen@umich.edu
+repository-code: "https://github.com/hanzhenzhujene/christian-moral-attention-reallocation"
+url: "https://github.com/hanzhenzhujene/christian-moral-attention-reallocation"
+abstract: >-
+  A pre-freeze research artifact for studying whether Christian heart-focused
+  framing reallocates moral attention in language models toward inward motive
+  and disposition rather than outward behavioral surface.
+keywords:
+  - llm evaluation
+  - moral reasoning
+  - christian ethics
+  - benchmark design
+  - prompt framing

@@ -1,4 +1,7 @@
-# Runbook
+# Internal Runbook
+
+This document covers the broader internal benchmark-construction and experiment workflow.
+The public README only guarantees reproduction of the current confirmation slice.
 
 ## 1. Materialize And Validate Paper-First Benchmarks
 

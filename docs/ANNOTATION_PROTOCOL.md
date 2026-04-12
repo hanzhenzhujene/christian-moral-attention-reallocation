@@ -1,5 +1,8 @@
 # Annotation Protocol
 
+This protocol governs benchmark annotation and review for the broader study workflow.
+It is more general than the current public confirmation artifact.
+
 ## Purpose
 
 This protocol is for assigning gold labels to pairwise moral items in:

@@ -1,256 +1,132 @@
 # Christian Moral Attention Reallocation
 
-![Status](https://img.shields.io/badge/status-confirmation%20result%20added-0f766e?style=flat-square)
-![Qwen-1.5B HSS Delta](https://img.shields.io/badge/qwen--1.5b%20HSS%20delta-%2B0.1739-12805c?style=flat-square)
-![Task B Overreach](https://img.shields.io/badge/task%20B%20overreach-0.0-16a34a?style=flat-square)
-![Same-heart Controls](https://img.shields.io/badge/same--heart%20controls-1.0-16a34a?style=flat-square)
-![Main Freeze](https://img.shields.io/badge/main%20freeze-blocked%20by%20swap--gap-b45309?style=flat-square)
+![Release](https://img.shields.io/github/v/release/hanzhenzhujene/christian-moral-attention-reallocation?style=flat-square)
+![Status](https://img.shields.io/badge/status-pre--freeze%20confirmation%20artifact-0f766e?style=flat-square)
+![Public Scope](https://img.shields.io/badge/public%20scope-Qwen--1.5B%20confirmation%20slice-12805c?style=flat-square)
 ![License](https://img.shields.io/badge/license-Apache--2.0-2563eb?style=flat-square)
 
-> Christian framing may not improve moral judgment uniformly, but it may reallocate what a model treats as morally diagnostic.
+> This repo does not show that Christian prompting makes LLMs more moral overall. It shows that, on a clean same-act confirmation slice, Christian heart-focused framing directionally improves inward-motive judgment without increasing same-heart overreach.
 
-This repository asks a more mechanistic question than "Does religious prompting make an LLM more moral?":
+## Abstract
 
-**When an LLM reads a moral case, does Christian heart-focused framing change what it treats as morally diagnostic, especially whether it privileges inward motive over outward behavioral surface?**
+This repository studies a narrow mechanistic question about moral cognition in language models: not whether Christian prompting makes a model "more moral" overall, but whether Christian heart-focused framing changes what the model treats as morally diagnostic. The benchmark logic centers on pairwise moral cases with three tasks: overall moral verdict (Task A), inward-orientation judgment (Task B), and reason focus (Task C). The key design uses same-act-different-motive pairs together with same-heart controls, so motive sensitivity can be separated from false projection of outwardly worse action into inwardly worse heart. On a 63-item Qwen-1.5B-Instruct confirmation slice, Christian heart-focused framing improved Task B accuracy from `0.8889` to `0.9524` and heart-sensitivity score from `0.6957` to `0.8696`, while same-heart control accuracy remained `1.0` and heart-overreach remained `0.0`. Under conservative paired testing this is a directional confirmation result, not yet a final decisive main-benchmark claim. The broader project design includes matched secular controls, but the current public artifact is intentionally narrower: a pre-freeze confirmation slice with honest reproducibility boundaries.
 
 ![Same-act confirmation overview](assets/same-act-confirmation-overview.png)
 
-## Current Strongest Result
+## Main Result At A Glance
 
-The strongest current result is a **same-act confirmation run** on `Qwen-1.5B-Instruct`, where the outward act is held fixed and only inward motive varies.
+| Model | Slice | Task B | HSS | Same-Heart Control | Overreach | Significance note |
+| --- | --- | ---: | ---: | ---: | ---: | --- |
+| Qwen-1.5B-Instruct | `23` same-act motive pairs + `40` same-heart controls | `0.8889 -> 0.9524` | `0.6957 -> 0.8696` | `1.0 -> 1.0` | `0.0 -> 0.0` | exact paired sign test: one-sided `p = 0.0625`, two-sided `p = 0.125` |
 
-- `63 items = 23 same_act_different_motive + 40 same-heart controls`
-- `126/126` completed calls across `baseline` and `christian_heart`
-- `parse_failure_rate = 0.0`
-- `same_heart_control_accuracy = 1.0` in both conditions
-- `heart_overreach_rate = 0.0` in both conditions
-- `heart_sensitivity_score = 0.6957 -> 0.8696`
-- `Task B accuracy = 0.8889 -> 0.9524`
-- `mean_explanation_chars = 111.54 -> 109.16`
+## What This Benchmark Measures
 
-### Paper-Ready Takeaway
+The core question is whether framing changes **what the model pays moral attention to**.
 
-Christian heart-focused framing improved inward-orientation judgment on a cleaner confirmation slice **without** buying that gain through verbosity or same-heart overreach. On the key `same_act_different_motive` slice, the paired HSS delta is `+0.1739` with bootstrap CI `[0.0435, 0.3478]`.
+One stylized same-act example looks like this:
 
-Under conservative exact paired testing this is still just short of decisive significance:
+| Case A | Case B |
+| --- | --- |
+| A student offers help mainly to look generous in public. | The same student offers the same help out of sincere concern. |
 
-- `4` better
-- `0` worse
-- `19` ties
-- one-sided `p = 0.0625`
-- two-sided `p = 0.125`
+The three tasks then separate different kinds of judgment:
 
-That means the strongest honest claim is:
+| Task | Plain-language question | Why it matters |
+| --- | --- | --- |
+| Task A | Which case is more morally problematic overall? | Tests the top-line verdict. |
+| Task B | Which case reveals a worse inward orientation? | Tests whether the model tracks motive and heart posture. |
+| Task C | Is the judgment mainly driven by outward act, motive, consequence, or rule? | Tests what the model treats as morally diagnostic. |
 
-> Christian framing now has a strong **directional** confirmation result on motive-sensitive inward-orientation judgment, but not yet a final freeze-grade decisive result.
+Same-heart controls are the guardrail. They hold inward orientation fixed while outward surface changes, so a method cannot "win" by simply over-imputing bad hearts everywhere.
 
-### Same-Act Confirmation Snapshot
+## What We Can Claim
 
-| Model | Condition | Pack | Heart-Sensitivity Score | Task B Accuracy | Same-Heart Control | Heart Overreach | Mean chars |
-| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Qwen-1.5B-Instruct | baseline | 63 | 0.6957 | 0.8889 | 1.0 | 0.0 | 111.54 |
-| Qwen-1.5B-Instruct | christian_heart | 63 | 0.8696 | 0.9524 | 1.0 | 0.0 | 109.16 |
+- On the current public confirmation slice, Christian heart-focused framing directionally improves inward-motive judgment.
+- The strongest movement is in Task B and heart-sensitivity, not in first-pass Task A verdicts.
+- That gain does not come with higher same-heart overreach or longer explanations on this slice.
 
-## Why This Result Matters
+## What We Cannot Yet Claim
 
-This project is not trying to show that Christian prompting is uniformly better at morality. It is testing a narrower mechanism:
+- We cannot claim that Christian prompting improves moral judgment overall across models or benchmarks.
+- We cannot yet claim a freeze-grade decisive result for the full paper benchmark.
+- We cannot yet claim that the current public confirmation result is uniquely Christian rather than semantic reorientation, because the canonical public slice here is a baseline-vs-Christian comparison.
 
-- does framing increase attention to **motive**
-- does that happen before Task A verdicts move
-- can we separate real motive sensitivity from noisy over-reading of "bad hearts"
+## Status
 
-The new confirmation run matters because it does all three cleanly:
+**What is frozen now**
 
-- the substantive gain appears on **Task B**, not on Task A
-- same-heart controls remain perfect
-- explanation length does not inflate
-- the effect is strongest on the most mechanistically relevant slice: `same_act_different_motive`
+- A public `Qwen-1.5B-Instruct` confirmation artifact on a 63-item same-act-plus-control slice.
+- The canonical result files in `results/main_same_act_confirmation_v12_mps/`.
+- The current project-page figure and a minimal reproduction path for this slice.
 
-## What This Project Actually Tests
+**What is not frozen yet**
 
-The core paper claim is:
+- The full 160-item main benchmark.
+- A fully double-annotated transformed Moral Stories main set.
+- A final order-robust Task B method that clears the freeze bar across all cells.
+- A public preprint and a full paper-ready main matrix.
 
-> Christian framing may not improve moral judgment uniformly, but it may reallocate moral attention from outward behavioral surface toward inward motive and disposition.
+## Reproduce The Current Confirmation Slice
 
-This repo operationalizes that claim with three tasks on the same item:
-
-- **Task A: moral evaluation**  
-  Which case is more morally problematic overall?
-- **Task B: inward-orientation judgment**  
-  Which case reflects a worse inward orientation, or are they the same?
-- **Task C: reason focus**  
-  Is the answer chiefly driven by outward act, motive, consequence, or rule?
-
-The main benchmark logic is pairwise:
-
-- same outward act, different motive
-- same norm, different heart posture
-- same intention, different outward action and consequence
-
-That last category is crucial because it acts as a **same-heart control**.
-
-## Evidence Ladder
-
-### 1. Method Breakthrough: Held-Out `v11` Pilot
-
-The held-out `v11` pilot established the guardrail breakthrough:
-
-- zero parse failures
-- zero heart overreach
-- perfect same-heart control behavior
-
-That result is still important because it showed the project could stop over-imputing corrupted hearts.
-
-![Held-out v11 pilot overview](assets/v11-heldout-overview.svg)
-
-### 2. Strongest Substantive Signal: Same-Act Confirmation
-
-The new confirmation pack adds the missing substantive layer:
-
-- on a cleaner same-act confirmation slice, Christian framing improves motive-sensitive Task B behavior on `Qwen-1.5B`
-- that gain happens without explanation inflation
-- that gain happens without same-heart overreach
-
-## Main Finding vs. Main Limitation
-
-### Stable Finding
-
-The benchmark-assisted multi-pass Task B method now supports two claims at once:
-
-- it can stay clean on same-heart controls
-- it can produce a directional motive-sensitivity gain under Christian framing on a stronger confirmation slice
-
-### Main Limitation
-
-Freeze is still blocked by **residual order sensitivity**.
-
-On the confirmation pack:
-
-- baseline overall Task B swap-gap is `0.1842`
-- Christian overall Task B swap-gap is `0.0789`
-- baseline same-act swap-gap is `0.4375`
-- Christian same-act swap-gap is `0.1765`
-
-So the remaining bottleneck is not parseability or heart overreach. It is still **order robustness inside same-act motive-sensitive pairs**.
-
-## What To Do Next
-
-The confirmation pack gives a practical target for the next data expansion step.
-
-- Current same-act motive-sensitive size: `23` items
-- Directional sign-test power at the observed effect size: about `0.37`
-- Approximate motive-item target for `0.80` directional power: `38`
-- Approximate motive-item target for `0.80` two-sided power: `44`
-
-So the highest-value next move is:
-
-1. add about `15` more clean `same_act_different_motive` items
-2. keep the same-heart controls unchanged
-3. rerun the `Qwen-1.5B` confirmation slice before claiming a final freeze-grade result
-
-## Repository Structure
-
-```text
-configs/     experiment configs for pilot branches, confirmations, and preview runs
-data/        curated Moral Stories subsets, HeartBench items, and study splits
-docs/        method notes, revision log, curation guide, preregistration draft
-prompts/     baseline, Christian, secular-matched, and pilot revision prompts
-results/     key pilot summaries, confirmation readouts, diagnostics, and manifests
-schemas/     benchmark, response, and run-record schemas
-scripts/     builders, validators, evaluators, runners, and visualization helpers
-assets/      SVG figures used on the project page
-```
-
-### High-Value Entry Points
-
-- [`results/main_same_act_confirmation_v12_mps/confirmation_readout.md`](results/main_same_act_confirmation_v12_mps/confirmation_readout.md)
-- [`results/main_same_act_confirmation_v12_mps/confirmation_robustness.md`](results/main_same_act_confirmation_v12_mps/confirmation_robustness.md)
-- [`results/main_same_act_confirmation_v12_mps/confirmation_summary.json`](results/main_same_act_confirmation_v12_mps/confirmation_summary.json)
-- [`results/main_same_act_confirmation_v12_mps/confirmation_swap_gap_by_pair_type.md`](results/main_same_act_confirmation_v12_mps/confirmation_swap_gap_by_pair_type.md)
-- [`docs/TASK_B_REVISION_LOG.md`](docs/TASK_B_REVISION_LOG.md)
-- [`docs/TASK_B_MULTIPASS_DIAGNOSTIC.md`](docs/TASK_B_MULTIPASS_DIAGNOSTIC.md)
-- [`results/pilot_live_v11_fullpilot/pilot_v11_fullpilot_readout.md`](results/pilot_live_v11_fullpilot/pilot_v11_fullpilot_readout.md)
-
-## Reproducing The Current Confirmation Result
-
-Install the minimal runtime:
+This public repo guarantees reproduction of the current `Qwen-1.5B-Instruct` confirmation slice, not the full benchmark-construction workflow. Third-party raw benchmark mirrors are intentionally not vendored here.
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
+python3 -m venv .venv && source .venv/bin/activate
+```
+
+```bash
 pip install -r requirements.txt
 ```
 
-Run the `Qwen-1.5B` same-act confirmation pack:
-
 ```bash
-python3 scripts/run_transformers_multipass.py \
-  --config configs/preview_execution_v12_main_partial_mps.json \
-  --model-alias Qwen-1.5B-Instruct \
-  --jobs results/paper_first_main_same_act_confirmation_jobs_v1.jsonl \
-  --output results/main_same_act_confirmation_v12_mps/qwen_1_5b_confirmation_runs.jsonl \
-  --failures-output results/main_same_act_confirmation_v12_mps/qwen_1_5b_confirmation_failures.jsonl \
-  --trace-output results/main_same_act_confirmation_v12_mps/qwen_1_5b_confirmation_trace.jsonl
+bash scripts/reproduce_confirmation_slice.sh results/reproduction_confirmation
 ```
 
-Score the run:
+Expected outputs:
 
-```bash
-python3 scripts/evaluate_runs.py \
-  --input results/main_same_act_confirmation_v12_mps/qwen_1_5b_confirmation_runs.jsonl \
-  --bootstrap-samples 1000 \
-  --contrasts baseline:christian_heart \
-  --output results/main_same_act_confirmation_v12_mps/confirmation_summary.json
+- `results/reproduction_confirmation/confirmation_summary.json`
+- `results/reproduction_confirmation/confirmation_health.json`
+- `results/reproduction_confirmation/confirmation_robustness.md`
+- `results/reproduction_confirmation/confirmation_overview.svg`
+
+## Repository Map
+
+- `assets/`: figures used on the project page
+- `configs/`: execution configs for the public confirmation artifact and internal study configs
+- `results/main_same_act_confirmation_v12_mps/`: canonical public result files for the current strongest slice
+- `scripts/reproduce_confirmation_slice.sh`: minimal reproduction entry point
+- `docs/RUNBOOK.md`: internal full-pipeline runbook for benchmark construction and broader experiments
+- `docs/ANNOTATION_PROTOCOL.md`: annotation rules for Task A, Task B, and Task C
+- `docs/archive/`: archived planning and scoping notes from the active workspace phase
+
+<details>
+<summary>Method Details And Internal Diagnostics</summary>
+
+- [Same-act confirmation readout](results/main_same_act_confirmation_v12_mps/confirmation_readout.md)
+- [Robustness report](results/main_same_act_confirmation_v12_mps/confirmation_robustness.md)
+- [Swap-gap breakdown](results/main_same_act_confirmation_v12_mps/confirmation_swap_gap_by_pair_type.md)
+- [Annotation protocol](docs/ANNOTATION_PROTOCOL.md)
+- [Internal runbook](docs/RUNBOOK.md)
+- [Task B revision log](docs/TASK_B_REVISION_LOG.md)
+- [Preregistration draft](docs/PREREGISTRATION_DRAFT.md)
+
+</details>
+
+## Citation
+
+Use the GitHub release artifact for citation when referencing this repository:
+
+- Release: [v0.1-confirmation](https://github.com/hanzhenzhujene/christian-moral-attention-reallocation/releases/tag/v0.1-confirmation)
+- Citation metadata: [CITATION.cff](CITATION.cff)
+- Preprint: no public preprint is linked yet
+
+```bibtex
+@software{zhu_2026_christian_moral_attention,
+  author = {Zhu, Hanzhen},
+  title = {Christian Moral Attention Reallocation},
+  year = {2026},
+  version = {v0.1-confirmation},
+  url = {https://github.com/hanzhenzhujene/christian-moral-attention-reallocation},
+  note = {Pre-freeze confirmation artifact}
+}
 ```
-
-Build the robustness readout:
-
-```bash
-python3 scripts/evaluate_robustness_report.py \
-  --bootstrap-samples 400 \
-  --contrasts baseline:christian_heart \
-  --input results/main_same_act_confirmation_v12_mps/qwen_1_5b_confirmation_runs.jsonl \
-  --output-json results/main_same_act_confirmation_v12_mps/confirmation_robustness.json \
-  --output-md results/main_same_act_confirmation_v12_mps/confirmation_robustness.md
-```
-
-Render the README figure:
-
-```bash
-python3 scripts/render_confirmation_overview.py \
-  --summary results/main_same_act_confirmation_v12_mps/confirmation_summary.json \
-  --health results/main_same_act_confirmation_v12_mps/confirmation_health.json \
-  --robustness results/main_same_act_confirmation_v12_mps/confirmation_robustness.json \
-  --output assets/same-act-confirmation-overview.svg
-```
-
-## Data And Provenance
-
-- **Moral Stories** is the main external benchmark source. This repo uses curated and transformed subsets designed for moral-attention diagnostics.
-- **HeartBench** is the auxiliary benchmark for Christian moral-psychology cases that standard benchmarks often miss.
-- Third-party raw mirrors and cloned external repositories are intentionally omitted from version control here; the public repo focuses on the curated research artifacts.
-
-## Project Status
-
-This is a **pre-freeze research repo**.
-
-What is already solid:
-
-- benchmark construction pipeline
-- annotation and audit workflow
-- multiple Task B revision branches
-- a held-out guardrail-clean pilot
-- a stronger same-act confirmation result on `Qwen-1.5B`
-
-What is not finished yet:
-
-- the full 160-item frozen main benchmark
-- complete double-annotated transformed Moral Stories main set
-- a final Task B method that clears the swap-gap freeze bar
-- a fully decisive same-act confirmation slice at higher motive-item count
-
-## License
-
-Code, documentation, prompts, and project-specific artifacts in this repository are released under the [Apache-2.0 License](LICENSE), unless noted otherwise.
-
-External datasets, mirrors, and third-party sources retain their original licenses and terms.
